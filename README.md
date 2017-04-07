@@ -1,11 +1,13 @@
-# api documentation for  [react-dom (v15.4.2)](https://facebook.github.io/react/)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-dom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-dom)
+# api documentation for  [react-dom (v15.4.2)](https://facebook.github.io/react/)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-dom.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-dom) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-dom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-dom)
 #### React package for working with the DOM.
 
 [![NPM](https://nodei.co/npm/react-dom.png?downloads=true)](https://www.npmjs.com/package/react-dom)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-dom/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-react_dom_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-dom/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-react-dom%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-dom/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-react-dom/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
