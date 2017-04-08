@@ -51,7 +51,7 @@
 
         href="https://facebook.github.io/react/"
 
-    >react-dom (v15.4.2)</a>
+    >react-dom (v15.5.3)</a>
 </h1>
 <h4>React package for working with the DOM.</h4>
 <div class="apidocSectionDiv"><a
@@ -156,6 +156,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactSimpleEmptyComponent">
             function <span class="apidocSignatureSpan">react-dom.</span>ReactSimpleEmptyComponent
             <span class="apidocSignatureSpan">(placeholderElement, instantiate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction">
+            function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction
+            <span class="apidocSignatureSpan">(testOptions)</span>
             </a>
 
         </li>
@@ -769,6 +778,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactSimpleEmptyComponent.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction.prototype</span>
 
         </li>
 
@@ -1811,6 +1826,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>DOMAttributeNames</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>DOMMutationMethods</span>
 
         </li>
 
@@ -4728,6 +4749,15 @@
 
         </li>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactShallowRenderer.createRenderer">
+            function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.</span>createRenderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactShallowRenderer.prototype">module react-dom.ReactShallowRenderer.prototype</a><ol>
@@ -4826,6 +4856,167 @@
             <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactSimpleEmptyComponent.prototype.unmountComponent">
             function <span class="apidocSignatureSpan">react-dom.ReactSimpleEmptyComponent.prototype.</span>unmountComponent
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactTestReconcileTransaction">module react-dom.ReactTestReconcileTransaction</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction">
+            function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction
+            <span class="apidocSignatureSpan">(testOptions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>getPooled
+            <span class="apidocSignatureSpan">(copyFieldsFrom)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.release">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>release
+            <span class="apidocSignatureSpan">(instance)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>poolSize</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>instancePool</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactTestReconcileTransaction.prototype">module react-dom.ReactTestReconcileTransaction.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>_isInTransaction</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>checkpoint
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>closeAll
+            <span class="apidocSignatureSpan">(startIndex)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>destructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getReactMountReady
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTestOptions
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTransactionWrappers
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getUpdateQueue
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>initializeAll
+            <span class="apidocSignatureSpan">(startIndex)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>isInTransaction
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>perform
+            <span class="apidocSignatureSpan">(method, scope, a, b, c, d, e, f)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>reinitializeTransaction
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback">
+            function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>rollback
+            <span class="apidocSignatureSpan">(checkpoint)</span>
             </a>
 
         </li>
@@ -5088,7 +5279,7 @@
 
             <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState">
             function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState
-            <span class="apidocSignatureSpan">(publicInstance, completeState)</span>
+            <span class="apidocSignatureSpan">(publicInstance, completeState, callback)</span>
             </a>
 
         </li>
@@ -6788,6 +6979,23 @@
 
 
     <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction" id="apidoc.element.react-dom.ReactTestReconcileTransaction">
+        function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction
+        <span class="apidocSignatureSpan">(testOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactTestReconcileTransaction(testOptions) {
+  this.reinitializeTransaction();
+  this.testOptions = testOptions;
+  this.reactMountReady = CallbackQueue.getPooled(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.react-dom.ResponderSyntheticEvent" id="apidoc.element.react-dom.ResponderSyntheticEvent">
         function <span class="apidocSignatureSpan">react-dom.</span>ResponderSyntheticEvent
         <span class="apidocSignatureSpan">(dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget)</span>
@@ -7262,6 +7470,8 @@ s&#x3e;. See %s.&#x27;, tagDisplayName, ancestorTag, ownerInfo) : void 0;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -7997,6 +8207,11 @@ this._renderedComponent.unmountComponent(true);
 
   if (handleEventFunc) {
     handleEventFunc(topLevelType, targetNode, targetInst);
+  }
+
+  // When blurring, set the value attribute for number inputs
+  if (topLevelType === &#x27;topBlur&#x27;) {
+    handleControlledInputBlur(targetInst, targetNode);
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -10272,6 +10487,8 @@ destructor: function () {
 
 
 
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -11725,7 +11942,7 @@ transaction, nextUnmaskedContext);
 (): childContextTypes must be defined in order to use getChildContext().&#x27;, this.getName() || &#x27;ReactCompositeComponent&#x27;) : _prodInvariant
 (&#x27;107&#x27;, this.getName() || &#x27;ReactCompositeComponent&#x27;) : void 0;
     if (process.env.NODE_ENV !== &#x27;production&#x27;) {
-      this._checkContextTypes(Component.childContextTypes, childContext, &#x27;childContext&#x27;);
+      this._checkContextTypes(Component.childContextTypes, childContext, &#x27;child context&#x27;);
     }
     for (var name in childContext) {
       !(name in Component.childContextTypes) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;%s.getChildContext(): key
@@ -14826,12 +15043,9 @@ https://fb.me/react-controlled-components&#x27;, owner &#x26;&#x26; owner.getNam
     initialChecked: props.checked != null ? props.checked : props.defaultChecked,
     initialValue: props.value != null ? props.value : defaultValue,
     listeners: null,
-    onChange: _handleChange.bind(inst)
+    onChange: _handleChange.bind(inst),
+    controlled: isControlled(props)
   };
-
-  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
-    inst._wrapperState.controlled = isControlled(props);
-  }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 case &#x27;video&#x27;:
@@ -14969,14 +15183,24 @@ Input elements should not switch from controlled to uncontrolled (or vice versa)
   var node = ReactDOMComponentTree.getNodeFromInstance(inst);
   var value = LinkedValueUtils.getValue(props);
   if (value != null) {
+    if (value === 0 &#x26;&#x26; node.value === &#x27;&#x27;) {
+      node.value = &#x27;0&#x27;;
+      // Note: IE9 reports a number inputs as &#x27;text&#x27;, so check props instead.
+    } else if (props.type === &#x27;number&#x27;) {
+      // Simulate `input.valueAsNumber`. IE9 does not support it
+      var valueAsNumber = parseFloat(node.value, 10) || 0;
 
-    // Cast `value` to a string to ensure the value is set correctly. While
-    // browsers typically do this as necessary, jsdom doesn&#x27;t.
-    var newValue = &#x27;&#x27; + value;
-
-    // To avoid side effects (such as losing text selection), only set value if changed
-    if (newValue !== node.value) {
-      node.value = newValue;
+      // eslint-disable-next-line
+      if (value != valueAsNumber) {
+        // Cast `value` to a string to ensure the value is set correctly. While
+        // browsers typically do this as necessary, jsdom doesn&#x27;t.
+        node.value = &#x27;&#x27; + value;
+      }
+      // eslint-disable-next-line
+    } else if (value != node.value) {
+      // Cast `value` to a string to ensure the value is set correctly. While
+      // browsers typically do this as necessary, jsdom doesn&#x27;t.
+      node.value = &#x27;&#x27; + value;
     }
   } else {
     if (props.value == null &#x26;&#x26; props.defaultValue != null) {
@@ -17578,12 +17802,12 @@ function scrollValueMonitor(cb) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+    var fakeNode = document.createElement(&#x27;react&#x27;);
     ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
       var boundFunc = func.bind(null, a);
       var evtType = &#x27;react-&#x27; + name;
       fakeNode.addEventListener(evtType, boundFunc, false);
       var evt = document.createEvent(&#x27;Event&#x27;);
-      // $FlowFixMe https://github.com/facebook/flow/issues/2336
       evt.initEvent(evtType, false, false);
       fakeNode.<span class="apidocCodeKeywordSpan">dispatchEvent</span>(evt);
       fakeNode.removeEventListener(evtType, boundFunc, false);
@@ -21872,6 +22096,38 @@ ReactServerUpdateQueue.prototype.enqueueReplaceState = function enqueueReplaceSt
     </ul>
 
 
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactShallowRenderer.createRenderer" id="apidoc.element.react-dom.ReactShallowRenderer.createRenderer">
+        function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.</span>createRenderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createRenderer = function () {
+  return new ReactShallowRenderer();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var invariant = require(&#x27;fbjs/lib/invariant&#x27;);
+var warning = require(&#x27;fbjs/lib/warning&#x27;);
+
+var topLevelTypes = EventConstants.topLevelTypes;
+
+function Event(suffix) {}
+
+// In react 16+ shallowRenderer will not be accessible via ReactTestUtils.<span class="apidocCodeKeywordSpan">createRenderer</span
+>()
+// Instead it will be available via react-test-renderer/shallow
+// Maintain backwards compat for 15.5.0 release, but warn about using the deprecated method
+var hasWarnedAboutCreateRenderer = false;
+function createRendererWithWarning() {
+process.env.NODE_ENV !== &#x27;production&#x27; ? warning(hasWarnedAboutCreateRenderer, &#x27;Shallow renderer has been moved to
+ react-test-renderer/shallow. &#x27; + &#x27;Update references to remove this warning.&#x27;) : void 0;
+hasWarnedAboutCreateRenderer = true;
+...</pre></li>
+    </ul>
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -21975,7 +22231,7 @@ ReactShallowRenderer.prototype.unmount = function unmount() {
   // Ensure we&#x27;ve done the default injections. This might not be true in the
   // case of a simple test that only requires React and the TestUtils in
   // conjunction with an inline-requires transform.
-  ReactDefaultInjection.inject();
+  injectDefaults();
 
   !React.isValidElement(element) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;ReactShallowRenderer render(): Invalid
  component element.%s&#x27;, typeof element === &#x27;function&#x27; ? &#x27; Instead of passing a component class, make sure to instantiate &#x27; + &#x27;it
@@ -22184,6 +22440,556 @@ if (prevChild != null &#x26;&#x26; shouldUpdateReactComponent(prevElement, nextE
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-dom.ReactTestReconcileTransaction" id="apidoc.module.react-dom.ReactTestReconcileTransaction">module react-dom.ReactTestReconcileTransaction</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction" id="apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction">
+        function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction
+        <span class="apidocSignatureSpan">(testOptions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ReactTestReconcileTransaction(testOptions) {
+  this.reinitializeTransaction();
+  this.testOptions = testOptions;
+  this.reactMountReady = CallbackQueue.getPooled(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled" id="apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>getPooled
+        <span class="apidocSignatureSpan">(copyFieldsFrom)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPooled = function (copyFieldsFrom) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, copyFieldsFrom);
+    return instance;
+  } else {
+    return new Klass(copyFieldsFrom);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  return null;
+}
+
+if (useFallbackCompositionData) {
+  // The current composition is stored statically and must not be
+  // overwritten while composition continues.
+  if (!currentComposition &#x26;&#x26; eventType === eventTypes.compositionStart) {
+    currentComposition = FallbackCompositionState.<span class="apidocCodeKeywordSpan">getPooled</span>(nativeEventTarget);
+  } else if (eventType === eventTypes.compositionEnd) {
+    if (currentComposition) {
+      fallbackData = currentComposition.getData();
+    }
+  }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.release" id="apidoc.element.react-dom.ReactTestReconcileTransaction.release">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>release
+        <span class="apidocSignatureSpan">(instance)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">release = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;Trying to release an instance into a
+pool of a different type.&#x27;) : _prodInvariant(&#x27;25&#x27;) : void 0;
+  instance.destructor();
+  if (Klass.instancePool.length &#x3c; Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+// If we are currently composing (IME) and using a fallback to do so,
+// try to extract the composed characters from the fallback object.
+// If composition event is available, we extract a string only at
+// compositionevent, otherwise extract it at fallback events.
+if (currentComposition) {
+  if (topLevelType === &#x27;topCompositionEnd&#x27; || !canUseCompositionEvent &#x26;&#x26; isFallbackCompositionEnd(topLevelType
+, nativeEvent)) {
+    var chars = currentComposition.getData();
+    FallbackCompositionState.<span class="apidocCodeKeywordSpan">release</span>(currentComposition);
+    currentComposition = null;
+    return chars;
+  }
+  return null;
+}
+
+switch (topLevelType) {
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-dom.ReactTestReconcileTransaction.prototype" id="apidoc.module.react-dom.ReactTestReconcileTransaction.prototype">module react-dom.ReactTestReconcileTransaction.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>checkpoint
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">checkpoint = function () {
+  // reactMountReady is the our only stateful wrapper
+  return this.reactMountReady.checkpoint();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  } else {
+    return Component(publicProps, publicContext, updateQueue);
+  }
+},
+
+performInitialMountWithErrorHandling: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
+  var markup;
+  var checkpoint = transaction.<span class="apidocCodeKeywordSpan">checkpoint</span>();
+  try {
+    markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+  } catch (e) {
+    // Roll back to checkpoint, handle error (which may add items to the transaction), and take a new checkpoint
+    transaction.rollback(checkpoint);
+    this._instance.unstable_handleError(e);
+    if (this._pendingStateQueue) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>closeAll
+        <span class="apidocSignatureSpan">(startIndex)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">closeAll = function (startIndex) {
+  !this.isInTransaction() ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;Transaction.closeAll(): Cannot close transaction
+ when none are open.&#x27;) : _prodInvariant(&#x27;28&#x27;) : void 0;
+  var transactionWrappers = this.transactionWrappers;
+  for (var i = startIndex; i &#x3c; transactionWrappers.length; i++) {
+    var wrapper = transactionWrappers[i];
+    var initData = this.wrapperInitData[i];
+    var errorThrown;
+    try {
+      // Catching errors makes debugging more difficult, so we start with
+      // errorThrown set to true before setting it to false after calling
+      // close -- if it&#x27;s still set to true in the finally block, it means
+      // wrapper.close threw.
+      errorThrown = true;
+      if (initData !== OBSERVED_ERROR &#x26;&#x26; wrapper.close) {
+        wrapper.close.call(this, initData);
+      }
+      errorThrown = false;
+    } finally {
+      if (errorThrown) {
+        // The closer for wrapper i threw an error; close the remaining
+        // wrappers but silence any exceptions from them to ensure that the
+        // first error is the one to bubble up.
+        try {
+          this.closeAll(i + 1);
+        } catch (e) {}
+      }
+    }
+  }
+  this.wrapperInitData.length = 0;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  errorThrown = false;
+} finally {
+  try {
+    if (errorThrown) {
+      // If `method` throws, prefer to show that stack trace over any thrown
+      // by invoking `closeAll`.
+      try {
+        this.<span class="apidocCodeKeywordSpan">closeAll</span>(0);
+      } catch (err) {}
+    } else {
+      // Since `method` didn&#x27;t throw, we don&#x27;t want to silence the exception
+      // here.
+      this.closeAll(0);
+    }
+  } finally {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>destructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destructor = function () {
+  CallbackQueue.release(this.reactMountReady);
+  this.reactMountReady = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    return new Klass(a1, a2, a3, a4);
+  }
+};
+
+var standardReleaser = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;Trying to release an instance
+ into a pool of a different type.&#x27;) : _prodInvariant(&#x27;25&#x27;) : void 0;
+  instance.<span class="apidocCodeKeywordSpan">destructor</span>();
+  if (Klass.instancePool.length &#x3c; Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+};
+
+var DEFAULT_POOL_SIZE = 10;
+var DEFAULT_POOLER = oneArgumentPooler;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getReactMountReady
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getReactMountReady = function () {
+  return this.reactMountReady;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  markup = this.performInitialMountWithErrorHandling(renderedElement, hostParent, hostContainerInfo, transaction, context);
+} else {
+  markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+}
+
+if (inst.componentDidMount) {
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    transaction.<span class="apidocCodeKeywordSpan">getReactMountReady</span>().enqueue(function () {
+      measureLifeCyclePerf(function () {
+        return inst.componentDidMount();
+      }, _this._debugID, &#x27;componentDidMount&#x27;);
+    });
+  } else {
+    transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTestOptions
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTestOptions = function () {
+  return this.testOptions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTransactionWrappers
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTransactionWrappers = function () {
+  return TRANSACTION_WRAPPERS;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Sets up this instance so that it is prepared for collecting metrics. Does
+ * so such that this setup method may be used on an instance that is already
+ * initialized, in a way that does not consume additional memory upon reuse.
+ * That can be useful if you decide to make your subclass of this mixin a
+ * &#x22;PooledClass&#x22;.
+ */
+reinitializeTransaction: function () {
+  this.transactionWrappers = this.<span class="apidocCodeKeywordSpan">getTransactionWrappers</span>();
+  if (this.wrapperInitData) {
+    this.wrapperInitData.length = 0;
+  } else {
+    this.wrapperInitData = [];
+  }
+  this._isInTransaction = false;
+},
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getUpdateQueue
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getUpdateQueue = function () {
+  return ReactUpdateQueue;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this._hostContainerInfo = hostContainerInfo;
+
+var publicProps = this._currentElement.props;
+var publicContext = this._processContext(context);
+
+var Component = this._currentElement.type;
+
+var updateQueue = transaction.<span class="apidocCodeKeywordSpan">getUpdateQueue</span>();
+
+// Initialize the public class
+var doConstruct = shouldConstruct(Component);
+var inst = this._constructComponent(doConstruct, publicProps, publicContext, updateQueue);
+var renderedElement;
+
+// Support functional components
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>initializeAll
+        <span class="apidocSignatureSpan">(startIndex)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initializeAll = function (startIndex) {
+  var transactionWrappers = this.transactionWrappers;
+  for (var i = startIndex; i &#x3c; transactionWrappers.length; i++) {
+    var wrapper = transactionWrappers[i];
+    try {
+      // Catching errors makes debugging more difficult, so we start with the
+      // OBSERVED_ERROR state before overwriting it with the real return value
+      // of initialize -- if it&#x27;s still set to OBSERVED_ERROR in the finally
+      // block, it means wrapper.initialize threw.
+      this.wrapperInitData[i] = OBSERVED_ERROR;
+      this.wrapperInitData[i] = wrapper.initialize ? wrapper.initialize.call(this) : null;
+    } finally {
+      if (this.wrapperInitData[i] === OBSERVED_ERROR) {
+        // The initializer for wrapper i threw an error; initialize the
+        // remaining wrappers but silence any exceptions from them to ensure
+        // that the first error is the one to bubble up.
+        try {
+          this.initializeAll(i + 1);
+        } catch (err) {}
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+try {
+  this._isInTransaction = true;
+  // Catching errors makes debugging more difficult, so we start with
+  // errorThrown set to true before setting it to false after calling
+  // close -- if it&#x27;s still set to true in the finally block, it means
+  // one of these calls threw.
+  errorThrown = true;
+  this.<span class="apidocCodeKeywordSpan">initializeAll</span>(0);
+  ret = method.call(scope, a, b, c, d, e, f);
+  errorThrown = false;
+} finally {
+  try {
+    if (errorThrown) {
+      // If `method` throws, prefer to show that stack trace over any thrown
+      // by invoking `closeAll`.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>isInTransaction
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isInTransaction = function () {
+  return !!this._isInTransaction;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @param {ReactClass} publicInstance The instance to use as `this` context.
+ * @param {?function} callback Called after state is updated.
+ * @internal
+ */
+
+
+ReactServerUpdateQueue.prototype.enqueueCallback = function enqueueCallback(publicInstance, callback, callerName) {
+  if (this.transaction.<span class="apidocCodeKeywordSpan">isInTransaction</span>()) {
+    ReactUpdateQueue.enqueueCallback(publicInstance, callback, callerName);
+  }
+};
+
+/**
+ * Forces an update. This should only be invoked when it is known with
+ * certainty that we are **not** in a DOM transaction.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>perform
+        <span class="apidocSignatureSpan">(method, scope, a, b, c, d, e, f)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">perform = function (method, scope, a, b, c, d, e, f) {
+  !!this.isInTransaction() ? process.env.NODE_ENV !== &#x27;production&#x27; ? invariant(false, &#x27;Transaction.perform(...): Cannot initialize
+ a transaction when there is already an outstanding transaction.&#x27;) : _prodInvariant(&#x27;27&#x27;) : void 0;
+  var errorThrown;
+  var ret;
+  try {
+    this._isInTransaction = true;
+    // Catching errors makes debugging more difficult, so we start with
+    // errorThrown set to true before setting it to false after calling
+    // close -- if it&#x27;s still set to true in the finally block, it means
+    // one of these calls threw.
+    errorThrown = true;
+    this.initializeAll(0);
+    ret = method.call(scope, a, b, c, d, e, f);
+    errorThrown = false;
+  } finally {
+    try {
+      if (errorThrown) {
+        // If `method` throws, prefer to show that stack trace over any thrown
+        // by invoking `closeAll`.
+        try {
+          this.closeAll(0);
+        } catch (err) {}
+      } else {
+        // Since `method` didn&#x27;t throw, we don&#x27;t want to silence the exception
+        // here.
+        this.closeAll(0);
+      }
+    } finally {
+      this._isInTransaction = false;
+    }
+  }
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+    ReactDefaultBatchingStrategy.isBatchingUpdates = true;
+
+    // The code is written this way to avoid extra allocations
+    if (alreadyBatchingUpdates) {
+      return callback(a, b, c, d, e);
+    } else {
+      return transaction.<span class="apidocCodeKeywordSpan">perform</span>(callback, null, a, b, c, d, e);
+    }
+  }
+};
+
+module.exports = ReactDefaultBatchingStrategy;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>reinitializeTransaction
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">reinitializeTransaction = function () {
+  this.transactionWrappers = this.getTransactionWrappers();
+  if (this.wrapperInitData) {
+    this.wrapperInitData.length = 0;
+  } else {
+    this.wrapperInitData = [];
+  }
+  this._isInTransaction = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  initialize: emptyFunction,
+  close: ReactUpdates.flushBatchedUpdates.bind(ReactUpdates)
+};
+
+var TRANSACTION_WRAPPERS = [FLUSH_BATCHED_UPDATES, RESET_BATCHED_UPDATES];
+
+function ReactDefaultBatchingStrategyTransaction() {
+  this.<span class="apidocCodeKeywordSpan">reinitializeTransaction</span>();
+}
+
+_assign(ReactDefaultBatchingStrategyTransaction.prototype, Transaction, {
+  getTransactionWrappers: function () {
+    return TRANSACTION_WRAPPERS;
+  }
+});
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback" id="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback">
+        function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>rollback
+        <span class="apidocSignatureSpan">(checkpoint)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rollback = function (checkpoint) {
+  this.reactMountReady.rollback(checkpoint);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  performInitialMountWithErrorHandling: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
+    var markup;
+    var checkpoint = transaction.checkpoint();
+    try {
+markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+    } catch (e) {
+// Roll back to checkpoint, handle error (which may add items to the transaction), and take a new checkpoint
+transaction.<span class="apidocCodeKeywordSpan">rollback</span>(checkpoint);
+this._instance.unstable_handleError(e);
+if (this._pendingStateQueue) {
+  this._instance.state = this._processPendingState(this._instance.props, this._instance.context);
+}
+checkpoint = transaction.checkpoint();
+
+this._renderedComponent.unmountComponent(true);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-dom.ReactTestUtils" id="apidoc.module.react-dom.ReactTestUtils">module react-dom.ReactTestUtils</a></h1>
 
 
@@ -22194,10 +23000,31 @@ if (prevChild != null &#x26;&#x26; shouldUpdateReactComponent(prevElement, nextE
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">createRenderer = function () {
+    <li>description and source-code<pre class="apidocCodePre">function createRendererWithWarning() {
+  process.env.NODE_ENV !== &#x27;production&#x27; ? warning(hasWarnedAboutCreateRenderer, &#x27;Shallow renderer has been moved to react-test-renderer
+/shallow. &#x27; + &#x27;Update references to remove this warning.&#x27;) : void 0;
+  hasWarnedAboutCreateRenderer = true;
+
   return new ReactShallowRenderer();
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var invariant = require(&#x27;fbjs/lib/invariant&#x27;);
+var warning = require(&#x27;fbjs/lib/warning&#x27;);
+
+var topLevelTypes = EventConstants.topLevelTypes;
+
+function Event(suffix) {}
+
+// In react 16+ shallowRenderer will not be accessible via ReactTestUtils.<span class="apidocCodeKeywordSpan">createRenderer</span
+>()
+// Instead it will be available via react-test-renderer/shallow
+// Maintain backwards compat for 15.5.0 release, but warn about using the deprecated method
+var hasWarnedAboutCreateRenderer = false;
+function createRendererWithWarning() {
+process.env.NODE_ENV !== &#x27;production&#x27; ? warning(hasWarnedAboutCreateRenderer, &#x27;Shallow renderer has been moved to
+ react-test-renderer/shallow. &#x27; + &#x27;Update references to remove this warning.&#x27;) : void 0;
+hasWarnedAboutCreateRenderer = true;
+...</pre></li>
     </ul>
 
 
@@ -22952,11 +23779,11 @@ ReactServerUpdateQueue.prototype.enqueueForceUpdate = function enqueueForceUpdat
     <h2>
         <a href="#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState" id="apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState">
         function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState
-        <span class="apidocSignatureSpan">(publicInstance, completeState)</span>
+        <span class="apidocSignatureSpan">(publicInstance, completeState, callback)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">enqueueReplaceState = function (publicInstance, completeState) {
+    <li>description and source-code<pre class="apidocCodePre">enqueueReplaceState = function (publicInstance, completeState, callback) {
   var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, &#x27;replaceState&#x27;);
 
   if (!internalInstance) {
@@ -22965,6 +23792,16 @@ ReactServerUpdateQueue.prototype.enqueueForceUpdate = function enqueueForceUpdat
 
   internalInstance._pendingStateQueue = [completeState];
   internalInstance._pendingReplaceState = true;
+
+  // Future-proof 15.5
+  if (callback !== undefined &#x26;&#x26; callback !== null) {
+    ReactUpdateQueue.validateCallback(callback, &#x27;replaceState&#x27;);
+    if (internalInstance._pendingCallbacks) {
+      internalInstance._pendingCallbacks.push(callback);
+    } else {
+      internalInstance._pendingCallbacks = [callback];
+    }
+  }
 
   enqueueUpdate(internalInstance);
 }</pre></li>
