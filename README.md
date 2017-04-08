@@ -1,9 +1,9 @@
-# api documentation for  [react-dom (v15.4.2)](https://facebook.github.io/react/)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-dom.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-dom) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-dom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-dom)
+# api documentation for  [react-dom (v15.5.3)](https://facebook.github.io/react/)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-dom.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-dom) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-dom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-dom)
 #### React package for working with the DOM.
 
 [![NPM](https://nodei.co/npm/react-dom.png?downloads=true)](https://www.npmjs.com/package/react-dom)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-react-dom%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-dom/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.buildNpmdoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-react-dom%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-react-dom/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-react-dom/build/screenCapture.npmPackageListing.svg)
 
@@ -25,16 +25,17 @@
         "url": "https://github.com/facebook/react/issues"
     },
     "dependencies": {
-        "fbjs": "^0.8.1",
+        "fbjs": "^0.8.9",
         "loose-envify": "^1.1.0",
-        "object-assign": "^4.1.0"
+        "object-assign": "^4.1.0",
+        "prop-types": "~15.5.0"
     },
     "description": "React package for working with the DOM.",
     "devDependencies": {},
     "directories": {},
     "dist": {
-        "shasum": "015363f05b0a1fd52ae9efdd3a0060d90695208f",
-        "tarball": "https://registry.npmjs.org/react-dom/-/react-dom-15.4.2.tgz"
+        "shasum": "2ee127ce942df55da53111ae303316e68072b5c5",
+        "tarball": "https://registry.npmjs.org/react-dom/-/react-dom-15.5.3.tgz"
     },
     "files": [
         "LICENSE",
@@ -43,7 +44,8 @@
         "dist/",
         "lib/",
         "index.js",
-        "server.js"
+        "server.js",
+        "test-utils.js"
     ],
     "homepage": "https://facebook.github.io/react/",
     "keywords": [
@@ -53,16 +55,20 @@
     "main": "index.js",
     "maintainers": [
         {
+            "name": "acdlite",
+            "email": "acdlite@me.com"
+        },
+        {
+            "name": "brianvaughn",
+            "email": "briandavidvaughn@gmail.com"
+        },
+        {
             "name": "fb",
             "email": "opensource+npm@fb.com"
         },
         {
             "name": "gaearon",
             "email": "dan.abramov@gmail.com"
-        },
-        {
-            "name": "graue",
-            "email": "scott@oceanbase.org"
         },
         {
             "name": "sebmarkbage",
@@ -77,6 +83,10 @@
             "email": "tomocchino@gmail.com"
         },
         {
+            "name": "trueadm",
+            "email": "dg@domgan.com"
+        },
+        {
             "name": "zpao",
             "email": "paul@oshannessy.com"
         }
@@ -84,7 +94,7 @@
     "name": "react-dom",
     "optionalDependencies": {},
     "peerDependencies": {
-        "react": "^15.4.2"
+        "react": "^15.5.3"
     },
     "readme": "ERROR: No README data found!",
     "repository": {
@@ -94,7 +104,7 @@
     "scripts": {
         "start": "node server.js"
     },
-    "version": "15.4.2"
+    "version": "15.5.3"
 }
 ```
 
@@ -114,6 +124,7 @@
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactServerUpdateQueue (transaction)](#apidoc.element.react-dom.ReactServerUpdateQueue)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactShallowRenderer ()](#apidoc.element.react-dom.ReactShallowRenderer)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactSimpleEmptyComponent (placeholderElement, instantiate)](#apidoc.element.react-dom.ReactSimpleEmptyComponent)
+1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction (testOptions)](#apidoc.element.react-dom.ReactTestReconcileTransaction)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>ResponderSyntheticEvent (dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget)](#apidoc.element.react-dom.ResponderSyntheticEvent)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>SyntheticAnimationEvent (dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget)](#apidoc.element.react-dom.SyntheticAnimationEvent)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>SyntheticClipboardEvent (dispatchConfig, dispatchMarker, nativeEvent, nativeEventTarget)](#apidoc.element.react-dom.SyntheticClipboardEvent)
@@ -206,6 +217,7 @@
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactServerUpdateQueue.prototype
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactShallowRenderer.prototype
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactSimpleEmptyComponent.prototype
+1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction.prototype
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactTestUtils
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactUpdateQueue
 1.  object <span class="apidocSignatureSpan">react-dom.</span>ReactUpdates
@@ -368,6 +380,7 @@
 #### [module react-dom.HTMLDOMPropertyConfig](#apidoc.module.react-dom.HTMLDOMPropertyConfig)
 1.  [function <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>isCustomAttribute ()](#apidoc.element.react-dom.HTMLDOMPropertyConfig.isCustomAttribute)
 1.  object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>DOMAttributeNames
+1.  object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>DOMMutationMethods
 1.  object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>DOMPropertyNames
 1.  object <span class="apidocSignatureSpan">react-dom.HTMLDOMPropertyConfig.</span>Properties
 
@@ -796,6 +809,7 @@
 
 #### [module react-dom.ReactShallowRenderer](#apidoc.module.react-dom.ReactShallowRenderer)
 1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactShallowRenderer ()](#apidoc.element.react-dom.ReactShallowRenderer.ReactShallowRenderer)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.</span>createRenderer ()](#apidoc.element.react-dom.ReactShallowRenderer.createRenderer)
 
 #### [module react-dom.ReactShallowRenderer.prototype](#apidoc.module.react-dom.ReactShallowRenderer.prototype)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.prototype.</span>_render (element, transaction, context)](#apidoc.element.react-dom.ReactShallowRenderer.prototype._render)
@@ -812,6 +826,28 @@
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactSimpleEmptyComponent.prototype.</span>mountComponent (transaction, hostParent, hostContainerInfo, context, parentDebugID // 0 in production and for roots )](#apidoc.element.react-dom.ReactSimpleEmptyComponent.prototype.mountComponent)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactSimpleEmptyComponent.prototype.</span>receiveComponent ()](#apidoc.element.react-dom.ReactSimpleEmptyComponent.prototype.receiveComponent)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactSimpleEmptyComponent.prototype.</span>unmountComponent ()](#apidoc.element.react-dom.ReactSimpleEmptyComponent.prototype.unmountComponent)
+
+#### [module react-dom.ReactTestReconcileTransaction](#apidoc.module.react-dom.ReactTestReconcileTransaction)
+1.  [function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction (testOptions)](#apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>getPooled (copyFieldsFrom)](#apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>release (instance)](#apidoc.element.react-dom.ReactTestReconcileTransaction.release)
+1.  number <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>poolSize
+1.  object <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>instancePool
+
+#### [module react-dom.ReactTestReconcileTransaction.prototype](#apidoc.module.react-dom.ReactTestReconcileTransaction.prototype)
+1.  boolean <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>_isInTransaction
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>checkpoint ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>closeAll (startIndex)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>destructor ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getReactMountReady ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTestOptions ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTransactionWrappers ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getUpdateQueue ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>initializeAll (startIndex)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>isInTransaction ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>perform (method, scope, a, b, c, d, e, f)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>reinitializeTransaction ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>rollback (checkpoint)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback)
 
 #### [module react-dom.ReactTestUtils](#apidoc.module.react-dom.ReactTestUtils)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactTestUtils.</span>createRenderer ()](#apidoc.element.react-dom.ReactTestUtils.createRenderer)
@@ -844,7 +880,7 @@
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueCallbackInternal (internalInstance, callback)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueCallbackInternal)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueElementInternal (internalInstance, nextElement, nextContext)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueElementInternal)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueForceUpdate (publicInstance)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueForceUpdate)
-1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState (publicInstance, completeState)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState)
+1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState (publicInstance, completeState, callback)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueSetState (publicInstance, partialState)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueSetState)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>isMounted (publicInstance)](#apidoc.element.react-dom.ReactUpdateQueue.isMounted)
 1.  [function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>validateCallback (callback, callerName)](#apidoc.element.react-dom.ReactUpdateQueue.validateCallback)
@@ -1279,6 +1315,20 @@ n/a
 ReactSimpleEmptyComponent = function (placeholderElement, instantiate) {
   this._currentElement = null;
   this._renderedComponent = instantiate(placeholderElement);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction"></a>[function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction (testOptions)](#apidoc.element.react-dom.ReactTestReconcileTransaction)
+- description and source-code
+```javascript
+function ReactTestReconcileTransaction(testOptions) {
+  this.reinitializeTransaction();
+  this.testOptions = testOptions;
+  this.reactMountReady = CallbackQueue.getPooled(this);
 }
 ```
 - example usage
@@ -2181,6 +2231,11 @@ extractEvents = function (topLevelType, targetInst, nativeEvent, nativeEventTarg
 
   if (handleEventFunc) {
     handleEventFunc(topLevelType, targetNode, targetInst);
+  }
+
+  // When blurring, set the value attribute for number inputs
+  if (topLevelType === 'topBlur') {
+    handleControlledInputBlur(targetInst, targetNode);
   }
 }
 ```
@@ -5521,7 +5576,7 @@ _processChildContext = function (currentContext) {
 (): childContextTypes must be defined in order to use getChildContext().', this.getName() || 'ReactCompositeComponent') : _prodInvariant
 ('107', this.getName() || 'ReactCompositeComponent') : void 0;
     if (process.env.NODE_ENV !== 'production') {
-      this._checkContextTypes(Component.childContextTypes, childContext, 'childContext');
+      this._checkContextTypes(Component.childContextTypes, childContext, 'child context');
     }
     for (var name in childContext) {
       !(name in Component.childContextTypes) ? process.env.NODE_ENV !== 'production' ? invariant(false, '%s.getChildContext(): key
@@ -8406,12 +8461,9 @@ https://fb.me/react-controlled-components', owner && owner.getName() || 'A compo
     initialChecked: props.checked != null ? props.checked : props.defaultChecked,
     initialValue: props.value != null ? props.value : defaultValue,
     listeners: null,
-    onChange: _handleChange.bind(inst)
+    onChange: _handleChange.bind(inst),
+    controlled: isControlled(props)
   };
-
-  if (process.env.NODE_ENV !== 'production') {
-    inst._wrapperState.controlled = isControlled(props);
-  }
 }
 ```
 - example usage
@@ -8543,14 +8595,24 @@ Input elements should not switch from controlled to uncontrolled (or vice versa)
   var node = ReactDOMComponentTree.getNodeFromInstance(inst);
   var value = LinkedValueUtils.getValue(props);
   if (value != null) {
+    if (value === 0 && node.value === '') {
+      node.value = '0';
+      // Note: IE9 reports a number inputs as 'text', so check props instead.
+    } else if (props.type === 'number') {
+      // Simulate 'input.valueAsNumber'. IE9 does not support it
+      var valueAsNumber = parseFloat(node.value, 10) || 0;
 
-    // Cast 'value' to a string to ensure the value is set correctly. While
-    // browsers typically do this as necessary, jsdom doesn't.
-    var newValue = '' + value;
-
-    // To avoid side effects (such as losing text selection), only set value if changed
-    if (newValue !== node.value) {
-      node.value = newValue;
+      // eslint-disable-next-line
+      if (value != valueAsNumber) {
+        // Cast 'value' to a string to ensure the value is set correctly. While
+        // browsers typically do this as necessary, jsdom doesn't.
+        node.value = '' + value;
+      }
+      // eslint-disable-next-line
+    } else if (value != node.value) {
+      // Cast 'value' to a string to ensure the value is set correctly. While
+      // browsers typically do this as necessary, jsdom doesn't.
+      node.value = '' + value;
     }
   } else {
     if (props.value == null && props.defaultValue != null) {
@@ -10931,12 +10993,12 @@ dispatchEvent = function (topLevelType, nativeEvent) {
 - example usage
 ```shell
 ...
+    var fakeNode = document.createElement('react');
     ReactErrorUtils.invokeGuardedCallback = function (name, func, a) {
       var boundFunc = func.bind(null, a);
       var evtType = 'react-' + name;
       fakeNode.addEventListener(evtType, boundFunc, false);
       var evt = document.createEvent('Event');
-      // $FlowFixMe https://github.com/facebook/flow/issues/2336
       evt.initEvent(evtType, false, false);
       fakeNode.dispatchEvent(evt);
       fakeNode.removeEventListener(evtType, boundFunc, false);
@@ -14821,6 +14883,34 @@ function ReactShallowRenderer() {
 n/a
 ```
 
+#### <a name="apidoc.element.react-dom.ReactShallowRenderer.createRenderer"></a>[function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.</span>createRenderer ()](#apidoc.element.react-dom.ReactShallowRenderer.createRenderer)
+- description and source-code
+```javascript
+createRenderer = function () {
+  return new ReactShallowRenderer();
+}
+```
+- example usage
+```shell
+...
+var invariant = require('fbjs/lib/invariant');
+var warning = require('fbjs/lib/warning');
+
+var topLevelTypes = EventConstants.topLevelTypes;
+
+function Event(suffix) {}
+
+// In react 16+ shallowRenderer will not be accessible via ReactTestUtils.createRenderer()
+// Instead it will be available via react-test-renderer/shallow
+// Maintain backwards compat for 15.5.0 release, but warn about using the deprecated method
+var hasWarnedAboutCreateRenderer = false;
+function createRendererWithWarning() {
+process.env.NODE_ENV !== 'production' ? warning(hasWarnedAboutCreateRenderer, 'Shallow renderer has been moved to react-test-renderer
+/shallow. ' + 'Update references to remove this warning.') : void 0;
+hasWarnedAboutCreateRenderer = true;
+...
+```
+
 
 
 # <a name="apidoc.module.react-dom.ReactShallowRenderer.prototype"></a>[module react-dom.ReactShallowRenderer.prototype](#apidoc.module.react-dom.ReactShallowRenderer.prototype)
@@ -14907,7 +14997,7 @@ function render(element, context) {
   // Ensure we've done the default injections. This might not be true in the
   // case of a simple test that only requires React and the TestUtils in
   // conjunction with an inline-requires transform.
-  ReactDefaultInjection.inject();
+  injectDefaults();
 
   !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'ReactShallowRenderer render(): Invalid
  component element.%s', typeof element === 'function' ? ' Instead of passing a component class, make sure to instantiate ' + 'it
@@ -15097,18 +15187,534 @@ if (prevChild != null && shouldUpdateReactComponent(prevElement, nextElement)) {
 
 
 
-# <a name="apidoc.module.react-dom.ReactTestUtils"></a>[module react-dom.ReactTestUtils](#apidoc.module.react-dom.ReactTestUtils)
+# <a name="apidoc.module.react-dom.ReactTestReconcileTransaction"></a>[module react-dom.ReactTestReconcileTransaction](#apidoc.module.react-dom.ReactTestReconcileTransaction)
 
-#### <a name="apidoc.element.react-dom.ReactTestUtils.createRenderer"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestUtils.</span>createRenderer ()](#apidoc.element.react-dom.ReactTestUtils.createRenderer)
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction"></a>[function <span class="apidocSignatureSpan">react-dom.</span>ReactTestReconcileTransaction (testOptions)](#apidoc.element.react-dom.ReactTestReconcileTransaction.ReactTestReconcileTransaction)
 - description and source-code
 ```javascript
-createRenderer = function () {
-  return new ReactShallowRenderer();
+function ReactTestReconcileTransaction(testOptions) {
+  this.reinitializeTransaction();
+  this.testOptions = testOptions;
+  this.reactMountReady = CallbackQueue.getPooled(this);
 }
 ```
 - example usage
 ```shell
 n/a
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>getPooled (copyFieldsFrom)](#apidoc.element.react-dom.ReactTestReconcileTransaction.getPooled)
+- description and source-code
+```javascript
+getPooled = function (copyFieldsFrom) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, copyFieldsFrom);
+    return instance;
+  } else {
+    return new Klass(copyFieldsFrom);
+  }
+}
+```
+- example usage
+```shell
+...
+  return null;
+}
+
+if (useFallbackCompositionData) {
+  // The current composition is stored statically and must not be
+  // overwritten while composition continues.
+  if (!currentComposition && eventType === eventTypes.compositionStart) {
+    currentComposition = FallbackCompositionState.getPooled(nativeEventTarget);
+  } else if (eventType === eventTypes.compositionEnd) {
+    if (currentComposition) {
+      fallbackData = currentComposition.getData();
+    }
+  }
+}
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.release"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.</span>release (instance)](#apidoc.element.react-dom.ReactTestReconcileTransaction.release)
+- description and source-code
+```javascript
+release = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a
+pool of a different type.') : _prodInvariant('25') : void 0;
+  instance.destructor();
+  if (Klass.instancePool.length < Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+}
+```
+- example usage
+```shell
+...
+// If we are currently composing (IME) and using a fallback to do so,
+// try to extract the composed characters from the fallback object.
+// If composition event is available, we extract a string only at
+// compositionevent, otherwise extract it at fallback events.
+if (currentComposition) {
+  if (topLevelType === 'topCompositionEnd' || !canUseCompositionEvent && isFallbackCompositionEnd(topLevelType, nativeEvent)) {
+    var chars = currentComposition.getData();
+    FallbackCompositionState.release(currentComposition);
+    currentComposition = null;
+    return chars;
+  }
+  return null;
+}
+
+switch (topLevelType) {
+...
+```
+
+
+
+# <a name="apidoc.module.react-dom.ReactTestReconcileTransaction.prototype"></a>[module react-dom.ReactTestReconcileTransaction.prototype](#apidoc.module.react-dom.ReactTestReconcileTransaction.prototype)
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>checkpoint ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.checkpoint)
+- description and source-code
+```javascript
+checkpoint = function () {
+  // reactMountReady is the our only stateful wrapper
+  return this.reactMountReady.checkpoint();
+}
+```
+- example usage
+```shell
+...
+  } else {
+    return Component(publicProps, publicContext, updateQueue);
+  }
+},
+
+performInitialMountWithErrorHandling: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
+  var markup;
+  var checkpoint = transaction.checkpoint();
+  try {
+    markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+  } catch (e) {
+    // Roll back to checkpoint, handle error (which may add items to the transaction), and take a new checkpoint
+    transaction.rollback(checkpoint);
+    this._instance.unstable_handleError(e);
+    if (this._pendingStateQueue) {
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>closeAll (startIndex)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.closeAll)
+- description and source-code
+```javascript
+closeAll = function (startIndex) {
+  !this.isInTransaction() ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Transaction.closeAll(): Cannot close transaction
+ when none are open.') : _prodInvariant('28') : void 0;
+  var transactionWrappers = this.transactionWrappers;
+  for (var i = startIndex; i < transactionWrappers.length; i++) {
+    var wrapper = transactionWrappers[i];
+    var initData = this.wrapperInitData[i];
+    var errorThrown;
+    try {
+      // Catching errors makes debugging more difficult, so we start with
+      // errorThrown set to true before setting it to false after calling
+      // close -- if it's still set to true in the finally block, it means
+      // wrapper.close threw.
+      errorThrown = true;
+      if (initData !== OBSERVED_ERROR && wrapper.close) {
+        wrapper.close.call(this, initData);
+      }
+      errorThrown = false;
+    } finally {
+      if (errorThrown) {
+        // The closer for wrapper i threw an error; close the remaining
+        // wrappers but silence any exceptions from them to ensure that the
+        // first error is the one to bubble up.
+        try {
+          this.closeAll(i + 1);
+        } catch (e) {}
+      }
+    }
+  }
+  this.wrapperInitData.length = 0;
+}
+```
+- example usage
+```shell
+...
+  errorThrown = false;
+} finally {
+  try {
+    if (errorThrown) {
+      // If 'method' throws, prefer to show that stack trace over any thrown
+      // by invoking 'closeAll'.
+      try {
+        this.closeAll(0);
+      } catch (err) {}
+    } else {
+      // Since 'method' didn't throw, we don't want to silence the exception
+      // here.
+      this.closeAll(0);
+    }
+  } finally {
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>destructor ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.destructor)
+- description and source-code
+```javascript
+destructor = function () {
+  CallbackQueue.release(this.reactMountReady);
+  this.reactMountReady = null;
+}
+```
+- example usage
+```shell
+...
+    return new Klass(a1, a2, a3, a4);
+  }
+};
+
+var standardReleaser = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a
+pool of a different type.') : _prodInvariant('25') : void 0;
+  instance.destructor();
+  if (Klass.instancePool.length < Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+};
+
+var DEFAULT_POOL_SIZE = 10;
+var DEFAULT_POOLER = oneArgumentPooler;
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getReactMountReady ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getReactMountReady)
+- description and source-code
+```javascript
+getReactMountReady = function () {
+  return this.reactMountReady;
+}
+```
+- example usage
+```shell
+...
+  markup = this.performInitialMountWithErrorHandling(renderedElement, hostParent, hostContainerInfo, transaction, context);
+} else {
+  markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+}
+
+if (inst.componentDidMount) {
+  if (process.env.NODE_ENV !== 'production') {
+    transaction.getReactMountReady().enqueue(function () {
+      measureLifeCyclePerf(function () {
+        return inst.componentDidMount();
+      }, _this._debugID, 'componentDidMount');
+    });
+  } else {
+    transaction.getReactMountReady().enqueue(inst.componentDidMount, inst);
+  }
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTestOptions ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTestOptions)
+- description and source-code
+```javascript
+getTestOptions = function () {
+  return this.testOptions;
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getTransactionWrappers ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getTransactionWrappers)
+- description and source-code
+```javascript
+getTransactionWrappers = function () {
+  return TRANSACTION_WRAPPERS;
+}
+```
+- example usage
+```shell
+...
+ * Sets up this instance so that it is prepared for collecting metrics. Does
+ * so such that this setup method may be used on an instance that is already
+ * initialized, in a way that does not consume additional memory upon reuse.
+ * That can be useful if you decide to make your subclass of this mixin a
+ * "PooledClass".
+ */
+reinitializeTransaction: function () {
+  this.transactionWrappers = this.getTransactionWrappers();
+  if (this.wrapperInitData) {
+    this.wrapperInitData.length = 0;
+  } else {
+    this.wrapperInitData = [];
+  }
+  this._isInTransaction = false;
+},
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>getUpdateQueue ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.getUpdateQueue)
+- description and source-code
+```javascript
+getUpdateQueue = function () {
+  return ReactUpdateQueue;
+}
+```
+- example usage
+```shell
+...
+this._hostContainerInfo = hostContainerInfo;
+
+var publicProps = this._currentElement.props;
+var publicContext = this._processContext(context);
+
+var Component = this._currentElement.type;
+
+var updateQueue = transaction.getUpdateQueue();
+
+// Initialize the public class
+var doConstruct = shouldConstruct(Component);
+var inst = this._constructComponent(doConstruct, publicProps, publicContext, updateQueue);
+var renderedElement;
+
+// Support functional components
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>initializeAll (startIndex)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.initializeAll)
+- description and source-code
+```javascript
+initializeAll = function (startIndex) {
+  var transactionWrappers = this.transactionWrappers;
+  for (var i = startIndex; i < transactionWrappers.length; i++) {
+    var wrapper = transactionWrappers[i];
+    try {
+      // Catching errors makes debugging more difficult, so we start with the
+      // OBSERVED_ERROR state before overwriting it with the real return value
+      // of initialize -- if it's still set to OBSERVED_ERROR in the finally
+      // block, it means wrapper.initialize threw.
+      this.wrapperInitData[i] = OBSERVED_ERROR;
+      this.wrapperInitData[i] = wrapper.initialize ? wrapper.initialize.call(this) : null;
+    } finally {
+      if (this.wrapperInitData[i] === OBSERVED_ERROR) {
+        // The initializer for wrapper i threw an error; initialize the
+        // remaining wrappers but silence any exceptions from them to ensure
+        // that the first error is the one to bubble up.
+        try {
+          this.initializeAll(i + 1);
+        } catch (err) {}
+      }
+    }
+  }
+}
+```
+- example usage
+```shell
+...
+try {
+  this._isInTransaction = true;
+  // Catching errors makes debugging more difficult, so we start with
+  // errorThrown set to true before setting it to false after calling
+  // close -- if it's still set to true in the finally block, it means
+  // one of these calls threw.
+  errorThrown = true;
+  this.initializeAll(0);
+  ret = method.call(scope, a, b, c, d, e, f);
+  errorThrown = false;
+} finally {
+  try {
+    if (errorThrown) {
+      // If 'method' throws, prefer to show that stack trace over any thrown
+      // by invoking 'closeAll'.
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>isInTransaction ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.isInTransaction)
+- description and source-code
+```javascript
+isInTransaction = function () {
+  return !!this._isInTransaction;
+}
+```
+- example usage
+```shell
+...
+ * @param {ReactClass} publicInstance The instance to use as 'this' context.
+ * @param {?function} callback Called after state is updated.
+ * @internal
+ */
+
+
+ReactServerUpdateQueue.prototype.enqueueCallback = function enqueueCallback(publicInstance, callback, callerName) {
+  if (this.transaction.isInTransaction()) {
+    ReactUpdateQueue.enqueueCallback(publicInstance, callback, callerName);
+  }
+};
+
+/**
+ * Forces an update. This should only be invoked when it is known with
+ * certainty that we are **not** in a DOM transaction.
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>perform (method, scope, a, b, c, d, e, f)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.perform)
+- description and source-code
+```javascript
+perform = function (method, scope, a, b, c, d, e, f) {
+  !!this.isInTransaction() ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Transaction.perform(...): Cannot initialize
+ a transaction when there is already an outstanding transaction.') : _prodInvariant('27') : void 0;
+  var errorThrown;
+  var ret;
+  try {
+    this._isInTransaction = true;
+    // Catching errors makes debugging more difficult, so we start with
+    // errorThrown set to true before setting it to false after calling
+    // close -- if it's still set to true in the finally block, it means
+    // one of these calls threw.
+    errorThrown = true;
+    this.initializeAll(0);
+    ret = method.call(scope, a, b, c, d, e, f);
+    errorThrown = false;
+  } finally {
+    try {
+      if (errorThrown) {
+        // If 'method' throws, prefer to show that stack trace over any thrown
+        // by invoking 'closeAll'.
+        try {
+          this.closeAll(0);
+        } catch (err) {}
+      } else {
+        // Since 'method' didn't throw, we don't want to silence the exception
+        // here.
+        this.closeAll(0);
+      }
+    } finally {
+      this._isInTransaction = false;
+    }
+  }
+  return ret;
+}
+```
+- example usage
+```shell
+...
+
+    ReactDefaultBatchingStrategy.isBatchingUpdates = true;
+
+    // The code is written this way to avoid extra allocations
+    if (alreadyBatchingUpdates) {
+      return callback(a, b, c, d, e);
+    } else {
+      return transaction.perform(callback, null, a, b, c, d, e);
+    }
+  }
+};
+
+module.exports = ReactDefaultBatchingStrategy;
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>reinitializeTransaction ()](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.reinitializeTransaction)
+- description and source-code
+```javascript
+reinitializeTransaction = function () {
+  this.transactionWrappers = this.getTransactionWrappers();
+  if (this.wrapperInitData) {
+    this.wrapperInitData.length = 0;
+  } else {
+    this.wrapperInitData = [];
+  }
+  this._isInTransaction = false;
+}
+```
+- example usage
+```shell
+...
+  initialize: emptyFunction,
+  close: ReactUpdates.flushBatchedUpdates.bind(ReactUpdates)
+};
+
+var TRANSACTION_WRAPPERS = [FLUSH_BATCHED_UPDATES, RESET_BATCHED_UPDATES];
+
+function ReactDefaultBatchingStrategyTransaction() {
+  this.reinitializeTransaction();
+}
+
+_assign(ReactDefaultBatchingStrategyTransaction.prototype, Transaction, {
+  getTransactionWrappers: function () {
+    return TRANSACTION_WRAPPERS;
+  }
+});
+...
+```
+
+#### <a name="apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestReconcileTransaction.prototype.</span>rollback (checkpoint)](#apidoc.element.react-dom.ReactTestReconcileTransaction.prototype.rollback)
+- description and source-code
+```javascript
+rollback = function (checkpoint) {
+  this.reactMountReady.rollback(checkpoint);
+}
+```
+- example usage
+```shell
+...
+  performInitialMountWithErrorHandling: function (renderedElement, hostParent, hostContainerInfo, transaction, context) {
+    var markup;
+    var checkpoint = transaction.checkpoint();
+    try {
+markup = this.performInitialMount(renderedElement, hostParent, hostContainerInfo, transaction, context);
+    } catch (e) {
+// Roll back to checkpoint, handle error (which may add items to the transaction), and take a new checkpoint
+transaction.rollback(checkpoint);
+this._instance.unstable_handleError(e);
+if (this._pendingStateQueue) {
+  this._instance.state = this._processPendingState(this._instance.props, this._instance.context);
+}
+checkpoint = transaction.checkpoint();
+
+this._renderedComponent.unmountComponent(true);
+...
+```
+
+
+
+# <a name="apidoc.module.react-dom.ReactTestUtils"></a>[module react-dom.ReactTestUtils](#apidoc.module.react-dom.ReactTestUtils)
+
+#### <a name="apidoc.element.react-dom.ReactTestUtils.createRenderer"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestUtils.</span>createRenderer ()](#apidoc.element.react-dom.ReactTestUtils.createRenderer)
+- description and source-code
+```javascript
+function createRendererWithWarning() {
+  process.env.NODE_ENV !== 'production' ? warning(hasWarnedAboutCreateRenderer, 'Shallow renderer has been moved to react-test-renderer
+/shallow. ' + 'Update references to remove this warning.') : void 0;
+  hasWarnedAboutCreateRenderer = true;
+
+  return new ReactShallowRenderer();
+}
+```
+- example usage
+```shell
+...
+var invariant = require('fbjs/lib/invariant');
+var warning = require('fbjs/lib/warning');
+
+var topLevelTypes = EventConstants.topLevelTypes;
+
+function Event(suffix) {}
+
+// In react 16+ shallowRenderer will not be accessible via ReactTestUtils.createRenderer()
+// Instead it will be available via react-test-renderer/shallow
+// Maintain backwards compat for 15.5.0 release, but warn about using the deprecated method
+var hasWarnedAboutCreateRenderer = false;
+function createRendererWithWarning() {
+process.env.NODE_ENV !== 'production' ? warning(hasWarnedAboutCreateRenderer, 'Shallow renderer has been moved to react-test-renderer
+/shallow. ' + 'Update references to remove this warning.') : void 0;
+hasWarnedAboutCreateRenderer = true;
+...
 ```
 
 #### <a name="apidoc.element.react-dom.ReactTestUtils.findAllInRenderedTree"></a>[function <span class="apidocSignatureSpan">react-dom.ReactTestUtils.</span>findAllInRenderedTree (inst, test)](#apidoc.element.react-dom.ReactTestUtils.findAllInRenderedTree)
@@ -15771,10 +16377,10 @@ ReactServerUpdateQueue.prototype.enqueueForceUpdate = function enqueueForceUpdat
 ...
 ```
 
-#### <a name="apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState"></a>[function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState (publicInstance, completeState)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState)
+#### <a name="apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState"></a>[function <span class="apidocSignatureSpan">react-dom.ReactUpdateQueue.</span>enqueueReplaceState (publicInstance, completeState, callback)](#apidoc.element.react-dom.ReactUpdateQueue.enqueueReplaceState)
 - description and source-code
 ```javascript
-enqueueReplaceState = function (publicInstance, completeState) {
+enqueueReplaceState = function (publicInstance, completeState, callback) {
   var internalInstance = getInternalInstanceReadyForUpdate(publicInstance, 'replaceState');
 
   if (!internalInstance) {
@@ -15783,6 +16389,16 @@ enqueueReplaceState = function (publicInstance, completeState) {
 
   internalInstance._pendingStateQueue = [completeState];
   internalInstance._pendingReplaceState = true;
+
+  // Future-proof 15.5
+  if (callback !== undefined && callback !== null) {
+    ReactUpdateQueue.validateCallback(callback, 'replaceState');
+    if (internalInstance._pendingCallbacks) {
+      internalInstance._pendingCallbacks.push(callback);
+    } else {
+      internalInstance._pendingCallbacks = [callback];
+    }
+  }
 
   enqueueUpdate(internalInstance);
 }
