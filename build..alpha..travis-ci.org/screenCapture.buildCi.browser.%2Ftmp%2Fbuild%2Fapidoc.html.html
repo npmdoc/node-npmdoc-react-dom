@@ -47,7 +47,7 @@
 }
 </style>
 <h1>api documentation for
-    <a href="https://facebook.github.io/react/">react-dom (v15.5.3)</a>
+    <a href="https://facebook.github.io/react/">react-dom (v15.5.4)</a>
 </h1>
 <h4>React package for working with the DOM.</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
@@ -506,6 +506,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactDOM</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactDOMComponent.prototype</span>
 
         </li>
@@ -561,12 +567,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactDOMSelection</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>ReactDOMServer</span>
 
         </li>
 
@@ -933,6 +933,12 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.</span>server</span>
 
         </li>
 
@@ -2471,6 +2477,67 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactDOM">module react-dom.ReactDOM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOM.findDOMNode">
+            function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>findDOMNode
+            <span class="apidocSignatureSpan">(componentOrElement)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOM.render">
+            function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>render
+            <span class="apidocSignatureSpan">(nextElement, container, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOM.unmountComponentAtNode">
+            function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unmountComponentAtNode
+            <span class="apidocSignatureSpan">(container)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOM.unstable_batchedUpdates">
+            function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unstable_batchedUpdates
+            <span class="apidocSignatureSpan">(callback, a, b, c, d, e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOM.unstable_renderSubtreeIntoContainer">
+            function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unstable_renderSubtreeIntoContainer
+            <span class="apidocSignatureSpan">(parentComponent, nextElement, container, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactDOMComponent">module react-dom.ReactDOMComponent</a><ol>
 
         <li>
@@ -3012,34 +3079,6 @@
             function <span class="apidocSignatureSpan">react-dom.ReactDOMSelection.</span>setOffsets
             <span class="apidocSignatureSpan">(node, offsets)</span>
             </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.ReactDOMServer">module react-dom.ReactDOMServer</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOMServer.renderToStaticMarkup">
-            function <span class="apidocSignatureSpan">react-dom.ReactDOMServer.</span>renderToStaticMarkup
-            <span class="apidocSignatureSpan">(element)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactDOMServer.renderToString">
-            function <span class="apidocSignatureSpan">react-dom.ReactDOMServer.</span>renderToString
-            <span class="apidocSignatureSpan">(element)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-dom.ReactDOMServer.</span>version</span>
 
         </li>
 
@@ -4796,6 +4835,15 @@
             <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactShallowRenderer.prototype.unmount">
             function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.prototype.</span>unmount
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.ReactShallowRenderer.prototype.unstable_batchedUpdates">
+            function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.prototype.</span>unstable_batchedUpdates
+            <span class="apidocSignatureSpan">(callback, bookkeeping)</span>
             </a>
 
         </li>
@@ -6705,6 +6753,34 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.server">module react-dom.server</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.server.renderToStaticMarkup">
+            function <span class="apidocSignatureSpan">react-dom.server.</span>renderToStaticMarkup
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-dom.server.renderToString">
+            function <span class="apidocSignatureSpan">react-dom.server.</span>renderToString
+            <span class="apidocSignatureSpan">(element)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-dom.server.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.react-dom.validateDOMNesting">module react-dom.validateDOMNesting</a><ol>
 
         <li>
@@ -7463,6 +7539,8 @@ s&gt;. See %s.', tagDisplayName, ancestorTag, ownerInfo) : void 0;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
+
+
 
 
 
@@ -10548,21 +10626,22 @@ function getComponentKey(component, index) {
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  // We found a component instance.
-  var keyUnique = childInstances[name] === undefined;
-  if (process.env.NODE_ENV !== 'production') {
-    if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = require('react/lib/ReactComponentTreeHook');
-    }
-    if (!keyUnique) {
-      process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with
+    var result = traverseContext;
+    var keyUnique = result[name] === undefined;
+    if (process.env.NODE_ENV !== 'production') {
+      if (!ReactComponentTreeHook) {
+        ReactComponentTreeHook = require('react/lib/ReactComponentTreeHook');
+      }
+      if (!keyUnique) {
+        process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with
  the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child
  will be used.%s', KeyEscapeUtils.<span class="apidocCodeKeywordSpan">unescape</span>(name), ReactComponentTreeHook.getStackAddendumByID
 (selfDebugID)) : void 0;
+      }
     }
-  }
-  if (child != null &amp;&amp; keyUnique) {
-    childInstances[name] = instantiateReactComponent(child, true);
+    if (keyUnique &amp;&amp; child != null) {
+      result[name] = child;
+    }
   }
 }
 ...</pre></li>
@@ -12336,20 +12415,20 @@ addComponentAsRefTo: function (component, ref, owner) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-var ShallowComponentWrapper = function (element) {
-// TODO: Consolidate with instantiateReactComponent
-if (process.env.NODE_ENV !== 'production') {
-  this._debugID = getNextDebugID();
-}
+var getNextDebugID = require('react/lib/getNextDebugID');
+var invariant = require('fbjs/lib/invariant');
+var warning = require('fbjs/lib/warning');
 
+// To avoid a cyclic dependency, we create the final class in this module
+var ReactCompositeComponentWrapper = function (element) {
 this.<span class="apidocCodeKeywordSpan">construct</span>(element);
 };
-_assign(ShallowComponentWrapper.prototype, ReactCompositeComponent, {
-_constructComponent: ReactCompositeComponent._constructComponentWithoutOwner,
-_instantiateReactComponent: function (element) {
-  return new NoopInternalComponent(element);
-},
-_replaceNodeWithMarkup: function () {},
+
+function getDeclarationErrorAddendum(owner) {
+if (owner) {
+  var name = owner.getName();
+  if (name) {
+    return ' Check the render method of `' + name + '`.';
 ...</pre></li>
     </ul>
 
@@ -12466,24 +12545,21 @@ var checkRenderMessage = function (owner) {
   return inst;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- *
- * @param {string} ref Reference name.
- * @param {component} component Component to store as `ref`.
- * @final
- * @private
+_assign(reactComponentExpectInternal.prototype, {
+// Getters -------------------------------------------------------------------
+
+/**
+ * @instance: Retrieves the backing instance.
  */
-attachRef: function (ref, component) {
-  var inst = this.<span class="apidocCodeKeywordSpan">getPublicInstance</span>();
-  !(inst != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Stateless function components cannot
- have refs.') : _prodInvariant('110') : void 0;
-  var publicComponentInstance = component.getPublicInstance();
-  if (process.env.NODE_ENV !== 'production') {
-    var componentName = component &amp;&amp; component.getName ? component.getName() : 'a component';
-    process.env.NODE_ENV !== 'production' ? warning(publicComponentInstance != null || component._compositeType !== CompositeTypes
-.StatelessFunctional, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created
- by %s). ' + 'Attempts to access this ref will fail.', ref, componentName, this.getName()) : void 0;
-  }
-  var refs = inst.refs === emptyObject ? inst.refs = {} : inst.refs;
+instance: function () {
+  return this._instance.<span class="apidocCodeKeywordSpan">getPublicInstance</span>();
+},
+
+/**
+ * There are two types of components in the world.
+ * - A component created via React.createClass() - Has a single child
+ *   subComponent - the return value from the .render() function. This
+ *   function @subComponent expects that this._instance is component created
 ...</pre></li>
     </ul>
 
@@ -13086,6 +13162,190 @@ receiveComponent: function (nextElement, transaction, nextContext) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">isYield = function (object) {
   return typeof object === 'object' &amp;&amp; object !== null &amp;&amp; object.$$typeof === REACT_YIELD_TYPE;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-dom.ReactDOM" id="apidoc.module.react-dom.ReactDOM">module react-dom.ReactDOM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactDOM.findDOMNode" id="apidoc.element.react-dom.ReactDOM.findDOMNode">
+        function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>findDOMNode
+        <span class="apidocSignatureSpan">(componentOrElement)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function findDOMNode(componentOrElement) {
+  if (process.env.NODE_ENV !== 'production') {
+    var owner = ReactCurrentOwner.current;
+    if (owner !== null) {
+      process.env.NODE_ENV !== 'production' ? warning(owner._warnedAboutRefsInRender, '%s is accessing findDOMNode inside its render
+(). ' + 'render() should be a pure function of props and state. It should ' + 'never access something that requires stale data from
+ the previous ' + 'render, such as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', owner.getName
+() || 'A component') : void 0;
+      owner._warnedAboutRefsInRender = true;
+    }
+  }
+  if (componentOrElement == null) {
+    return null;
+  }
+  if (componentOrElement.nodeType === 1) {
+    return componentOrElement;
+  }
+
+  var inst = ReactInstanceMap.get(componentOrElement);
+  if (inst) {
+    inst = getHostComponentFromComposite(inst);
+    return inst ? ReactDOMComponentTree.getNodeFromInstance(inst) : null;
+  }
+
+  if (typeof componentOrElement.render === 'function') {
+    !false ? process.env.NODE_ENV !== 'production' ? invariant(false, 'findDOMNode was called on an unmounted component.') : _prodInvariant
+('44') : void 0;
+  } else {
+    !false ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Element appears to be neither ReactComponent nor DOMNode (
+keys: %s)', Object.keys(componentOrElement)) : _prodInvariant('45', Object.keys(componentOrElement)) : void 0;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactDOM.render" id="apidoc.element.react-dom.ReactDOM.render">
+        function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>render
+        <span class="apidocSignatureSpan">(nextElement, container, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (nextElement, container, callback) {
+  return ReactMount._renderSubtreeIntoContainer(null, nextElement, container, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+class MyComponent extends React.Component {
+  render() {
+    return &lt;div&gt;Hello World&lt;/div&gt;;
+  }
+}
+
+ReactDOM.<span class="apidocCodeKeywordSpan">render</span>(&lt;MyComponent /&gt;, node);
+```
+
+### On the server
+
+```js
+var React = require('react');
+var ReactDOMServer = require('react-dom/server');
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactDOM.unmountComponentAtNode" id="apidoc.element.react-dom.ReactDOM.unmountComponentAtNode">
+        function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unmountComponentAtNode
+        <span class="apidocSignatureSpan">(container)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unmountComponentAtNode = function (container) {
+  // Various parts of our code (such as ReactCompositeComponent's
+  // _renderValidatedComponent) assume that calls to render aren't nested;
+  // verify that that's the case. (Strictly speaking, unmounting won't cause a
+  // render but we still don't expect to be in a render call here.)
+  process.env.NODE_ENV !== 'production' ? warning(ReactCurrentOwner.current == null, 'unmountComponentAtNode(): Render methods should
+ be a pure function ' + 'of props and state; triggering nested component updates from render ' + 'is not allowed. If necessary,
+trigger nested updates in ' + 'componentDidUpdate. Check the render method of %s.', ReactCurrentOwner.current &amp;&amp; ReactCurrentOwner
+.current.getName() || 'ReactCompositeComponent') : void 0;
+
+  !isValidContainer(container) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'unmountComponentAtNode(...): Target container
+ is not a DOM element.') : _prodInvariant('40') : void 0;
+
+  if (process.env.NODE_ENV !== 'production') {
+    process.env.NODE_ENV !== 'production' ? warning(!nodeIsRenderedByOtherInstance(container), 'unmountComponentAtNode(): The node
+ you\'re attempting to unmount ' + 'was rendered by another copy of React.') : void 0;
+  }
+
+  var prevComponent = getTopLevelWrapperInContainer(container);
+  if (!prevComponent) {
+    // Check if the node being unmounted was rendered by React, but isn't a
+    // root node.
+    var containerHasNonRootReactChild = hasNonRootReactChild(container);
+
+    // Check if the container itself is a React root node.
+    var isContainerReactRoot = container.nodeType === 1 &amp;&amp; container.hasAttribute(ROOT_ATTR_NAME);
+
+    if (process.env.NODE_ENV !== 'production') {
+      process.env.NODE_ENV !== 'production' ? warning(!containerHasNonRootReactChild, 'unmountComponentAtNode(): The node you\'re
+ attempting to unmount ' + 'was rendered by React and is not a top-level container. %s', isContainerReactRoot ? 'You may have accidentally
+ passed in a React root node instead ' + 'of its container.' : 'Instead, have the parent component update its state and ' + 'rerender
+ in order to remove this component.') : void 0;
+    }
+
+    return false;
+  }
+  delete instancesByReactRootID[prevComponent._instance.rootID];
+  ReactUpdates.batchedUpdates(unmountComponentFromNode, prevComponent, container, false);
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    var publicInst = prevComponent._renderedComponent.getPublicInstance();
+    var updatedCallback = callback &amp;&amp; function () {
+      callback.call(publicInst);
+    };
+    ReactMount._updateRootComponent(prevComponent, nextWrappedElement, nextContext, container, updatedCallback);
+    return publicInst;
+  } else {
+    ReactMount.<span class="apidocCodeKeywordSpan">unmountComponentAtNode</span>(container);
+  }
+}
+
+var reactRootElement = getReactRootElementInContainer(container);
+var containerHasReactMarkup = reactRootElement &amp;&amp; !!internalGetID(reactRootElement);
+var containerHasNonRootReactChild = hasNonRootReactChild(container);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactDOM.unstable_batchedUpdates" id="apidoc.element.react-dom.ReactDOM.unstable_batchedUpdates">
+        function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unstable_batchedUpdates
+        <span class="apidocSignatureSpan">(callback, a, b, c, d, e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function batchedUpdates(callback, a, b, c, d, e) {
+  ensureInjected();
+  return batchingStrategy.batchedUpdates(callback, a, b, c, d, e);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactDOM.unstable_renderSubtreeIntoContainer" id="apidoc.element.react-dom.ReactDOM.unstable_renderSubtreeIntoContainer">
+        function <span class="apidocSignatureSpan">react-dom.ReactDOM.</span>unstable_renderSubtreeIntoContainer
+        <span class="apidocSignatureSpan">(parentComponent, nextElement, container, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">unstable_renderSubtreeIntoContainer = function (parentComponent, nextElement, container, callback) {
+  !(parentComponent != null &amp;&amp; ReactInstanceMap.has(parentComponent)) ? process.env.NODE_ENV !== 'production' ? invariant(false, '
+parentComponent must be a valid React Component') : _prodInvariant('38') : void 0;
+  return ReactMount._renderSubtreeIntoContainer(parentComponent, nextElement, container, callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -13863,24 +14123,21 @@ if (prevChild != null &amp;&amp; shouldUpdateReactComponent(prevElement, nextEle
   return getNode(this);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- *
- * @param {string} ref Reference name.
- * @param {component} component Component to store as `ref`.
- * @final
- * @private
+_assign(reactComponentExpectInternal.prototype, {
+// Getters -------------------------------------------------------------------
+
+/**
+ * @instance: Retrieves the backing instance.
  */
-attachRef: function (ref, component) {
-  var inst = this.<span class="apidocCodeKeywordSpan">getPublicInstance</span>();
-  !(inst != null) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Stateless function components cannot
- have refs.') : _prodInvariant('110') : void 0;
-  var publicComponentInstance = component.getPublicInstance();
-  if (process.env.NODE_ENV !== 'production') {
-    var componentName = component &amp;&amp; component.getName ? component.getName() : 'a component';
-    process.env.NODE_ENV !== 'production' ? warning(publicComponentInstance != null || component._compositeType !== CompositeTypes
-.StatelessFunctional, 'Stateless function components cannot be given refs ' + '(See ref "%s" in %s created
- by %s). ' + 'Attempts to access this ref will fail.', ref, componentName, this.getName()) : void 0;
-  }
-  var refs = inst.refs === emptyObject ? inst.refs = {} : inst.refs;
+instance: function () {
+  return this._instance.<span class="apidocCodeKeywordSpan">getPublicInstance</span>();
+},
+
+/**
+ * There are two types of components in the world.
+ * - A component created via React.createClass() - Has a single child
+ *   subComponent - the return value from the .render() function. This
+ *   function @subComponent expects that this._instance is component created
 ...</pre></li>
     </ul>
 
@@ -15863,63 +16120,6 @@ module.exports = ReactInputSelection;
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-dom.ReactDOMServer" id="apidoc.module.react-dom.ReactDOMServer">module react-dom.ReactDOMServer</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-dom.ReactDOMServer.renderToStaticMarkup" id="apidoc.element.react-dom.ReactDOMServer.renderToStaticMarkup">
-        function <span class="apidocSignatureSpan">react-dom.ReactDOMServer.</span>renderToStaticMarkup
-        <span class="apidocSignatureSpan">(element)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function renderToStaticMarkup(element) {
-  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass
- a valid ReactElement.') : _prodInvariant('47') : void 0;
-  return renderToStringImpl(element, true);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.react-dom.ReactDOMServer.renderToString" id="apidoc.element.react-dom.ReactDOMServer.renderToString">
-        function <span class="apidocSignatureSpan">react-dom.ReactDOMServer.</span>renderToString
-        <span class="apidocSignatureSpan">(element)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function renderToString(element) {
-  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid
- ReactElement.') : _prodInvariant('46') : void 0;
-  return renderToStringImpl(element, false);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-class MyComponent extends React.Component {
-  render() {
-    return &lt;div&gt;Hello World&lt;/div&gt;;
-  }
-}
-
-ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToString</span>(&lt;MyComponent /&gt;);
-```
-
-## API
-
-### `react-dom`
-
-- `findDOMNode`
-...</pre></li>
-    </ul>
-
-
-
-
-</div>
-
-<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-dom.ReactDOMTextComponent" id="apidoc.module.react-dom.ReactDOMTextComponent">module react-dom.ReactDOMTextComponent</a></h1>
 
 
@@ -17537,20 +17737,20 @@ function runEventInBatch(event) {
   ReactInjection.Component.injectEnvironment(ReactComponentBrowserEnvironment);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-
-'use strict';
-
-var ReactDefaultInjection = require('./ReactDefaultInjection');
-var ReactServerRendering = require('./ReactServerRendering');
 var ReactVersion = require('./ReactVersion');
+
+var findDOMNode = require('./findDOMNode');
+var getHostComponentFromComposite = require('./getHostComponentFromComposite');
+var renderSubtreeIntoContainer = require('./renderSubtreeIntoContainer');
+var warning = require('fbjs/lib/warning');
 
 ReactDefaultInjection.<span class="apidocCodeKeywordSpan">inject</span>();
 
-var ReactDOMServer = {
-  renderToString: ReactServerRendering.renderToString,
-  renderToStaticMarkup: ReactServerRendering.renderToStaticMarkup,
-  version: ReactVersion
-};
+var ReactDOM = {
+findDOMNode: findDOMNode,
+render: ReactMount.render,
+unmountComponentAtNode: ReactMount.unmountComponentAtNode,
+version: ReactVersion,
 ...</pre></li>
     </ul>
 
@@ -17572,23 +17772,22 @@ var ReactDOMServer = {
   return emptyComponentFactory(instantiate);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-SyntheticEvent.Interface = EventInterface;
+ * @return {object} A new instance of the element's constructor.
+ * @protected
+ */
+function instantiateReactComponent(node, shouldHaveDebugID) {
+var instance;
 
-if (process.env.NODE_ENV !== 'production') {
-if (isProxySupported) {
-  /*eslint-disable no-func-assign */
-  SyntheticEvent = new Proxy(SyntheticEvent, {
-    construct: function (target, args) {
-      return this.apply(target, Object.<span class="apidocCodeKeywordSpan">create</span>(target.prototype), args);
-    },
-    apply: function (constructor, that, args) {
-      return new Proxy(constructor.apply(that, args), {
-        set: function (target, prop, value) {
-          if (prop !== 'isPersistent' &amp;&amp; !target.constructor.Interface.hasOwnProperty(prop) &amp;&amp; shouldBeReleasedProperties
-.indexOf(prop) === -1) {
-            process.env.NODE_ENV !== 'production' ? warning(didWarnForAddedNewProperty || target.isPersistent(), '
-;This synthetic event is reused for performance reasons. If you\'re ' + 'seeing this, you\'re adding a new property in the synthetic event object. ' + 'The property is never released. See ' + 'https://fb.me/react-event-pooling for more information.') : void 0;
-            didWarnForAddedNewProperty = true;
+if (node === null || node === false) {
+  instance = ReactEmptyComponent.<span class="apidocCodeKeywordSpan">create</span>(instantiateReactComponent);
+} else if (typeof node === 'object') {
+  var element = node;
+  var type = element.type;
+  if (typeof type !== 'function' &amp;&amp; typeof type !== 'string') {
+    var info = '';
+    if (process.env.NODE_ENV !== 'production') {
+      if (type === undefined || typeof type === 'object' &amp;&amp; type !== null &amp;&amp; Object.keys(type).length
+ === 0) {
 ...</pre></li>
     </ul>
 
@@ -18742,21 +18941,22 @@ restoreSelection: function (priorSelectionInformation) {
   return key._reactInternalInstance;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-ImpureClass: 0,
-PureClass: 1,
-StatelessFunctional: 2
-};
+if (componentOrElement == null) {
+  return null;
+}
+if (componentOrElement.nodeType === 1) {
+  return componentOrElement;
+}
 
-function StatelessComponent(Component) {}
-StatelessComponent.prototype.render = function () {
-var Component = ReactInstanceMap.<span class="apidocCodeKeywordSpan">get</span>(this)._currentElement.type;
-var element = Component(this.props, this.context, this.updater);
-warnIfInvalidElement(Component, element);
-return element;
-};
+var inst = ReactInstanceMap.<span class="apidocCodeKeywordSpan">get</span>(componentOrElement);
+if (inst) {
+  inst = getHostComponentFromComposite(inst);
+  return inst ? ReactDOMComponentTree.getNodeFromInstance(inst) : null;
+}
 
-function warnIfInvalidElement(Component, element) {
-if (process.env.NODE_ENV !== 'production') {
+if (typeof componentOrElement.render === 'function') {
+  !false ? process.env.NODE_ENV !== 'production' ? invariant(false, 'findDOMNode was called on an unmounted component
+.') : _prodInvariant('44') : void 0;
 ...</pre></li>
     </ul>
 
@@ -22277,6 +22477,23 @@ var ReactDOMServer = require('react-dom/server');
     </ul>
 
 
+
+    <h2>
+        <a href="#apidoc.element.react-dom.ReactShallowRenderer.prototype.unstable_batchedUpdates" id="apidoc.element.react-dom.ReactShallowRenderer.prototype.unstable_batchedUpdates">
+        function <span class="apidocSignatureSpan">react-dom.ReactShallowRenderer.prototype.</span>unstable_batchedUpdates
+        <span class="apidocSignatureSpan">(callback, bookkeeping)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unstable_batchedUpdates(callback, bookkeeping) {
+  // This is used by Enzyme for fake-simulating events in shallow mode.
+  injectDefaults();
+  return ReactUpdates.batchedUpdates(callback, bookkeeping);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
 </div>
 
 <div class="apidocSectionDiv">
@@ -23148,22 +23365,23 @@ scryRenderedDOMComponentsWithClass: function (root, classNames) {
   return inst != null &amp;&amp; typeof inst.render === 'function' &amp;&amp; typeof inst.setState === 'function';
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    // this returns when we have DOM nodes as refs directly
-    return false;
-  }
-  return inst != null &amp;&amp; typeof inst.render === 'function' &amp;&amp; typeof inst.setState === 'function
-';
-},
+if (!(this instanceof reactComponentExpect)) {
+  return new reactComponentExpect(instance);
+}
 
-isCompositeComponentWithType: function (inst, type) {
-  if (!ReactTestUtils.<span class="apidocCodeKeywordSpan">isCompositeComponent</span>(inst)) {
-    return false;
-  }
-  var internalInstance = ReactInstanceMap.get(inst);
-  var constructor = internalInstance._currentElement.type;
+expect(instance).not.toBeNull();
+expect(instance).not.toBeUndefined();
 
-  return constructor === type;
-},
+!ReactTestUtils.<span class="apidocCodeKeywordSpan">isCompositeComponent</span>(instance) ? process.env.NODE_ENV !== 'production
+' ? invariant(false, 'reactComponentExpect(...): instance must be a composite component') : _prodInvariant('
+15') : void 0;
+var internalInstance = ReactInstanceMap.get(instance);
+
+expect(typeof internalInstance).toBe('object');
+expect(typeof internalInstance.constructor).toBe('function');
+expect(ReactTestUtils.isElement(internalInstance)).toBe(false);
+
+return new reactComponentExpectInternal(internalInstance);
 ...</pre></li>
     </ul>
 
@@ -23273,21 +23491,21 @@ scryRenderedComponentsWithType: function (root, componentType) {
   return !!(inst &amp;&amp; inst.nodeType === 1 &amp;&amp; inst.tagName);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-function findAllInRenderedTreeInternal(inst, test) {
-if (!inst || !inst.getPublicInstance) {
-  return [];
-}
-var publicInst = inst.getPublicInstance();
-var ret = test(publicInst) ? [publicInst] : [];
-var currentElement = inst._currentElement;
-if (ReactTestUtils.<span class="apidocCodeKeywordSpan">isDOMComponent</span>(publicInst)) {
-  var renderedChildren = inst._renderedChildren;
-  var key;
-  for (key in renderedChildren) {
-    if (!renderedChildren.hasOwnProperty(key)) {
-      continue;
-    }
-    ret = ret.concat(findAllInRenderedTreeInternal(renderedChildren[key], test));
+},
+
+/**
+ * A terminal type of component representing some virtual dom node. Just duck
+ * typing here.
+ */
+toBeDOMComponent: function () {
+  expect(ReactTestUtils.<span class="apidocCodeKeywordSpan">isDOMComponent</span>(this.instance())).toBe(true);
+  return this;
+},
+
+/**
+ * @deprecated
+ * @see toBeComponentOfType
+ */
 ...</pre></li>
     </ul>
 
@@ -27574,6 +27792,63 @@ _assign(ReactDefaultBatchingStrategyTransaction.prototype, Transaction, {
     </ul>
 
 
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-dom.server" id="apidoc.module.react-dom.server">module react-dom.server</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.server.renderToStaticMarkup" id="apidoc.element.react-dom.server.renderToStaticMarkup">
+        function <span class="apidocSignatureSpan">react-dom.server.</span>renderToStaticMarkup
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderToStaticMarkup(element) {
+  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass
+ a valid ReactElement.') : _prodInvariant('47') : void 0;
+  return renderToStringImpl(element, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-dom.server.renderToString" id="apidoc.element.react-dom.server.renderToString">
+        function <span class="apidocSignatureSpan">react-dom.server.</span>renderToString
+        <span class="apidocSignatureSpan">(element)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderToString(element) {
+  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid
+ ReactElement.') : _prodInvariant('46') : void 0;
+  return renderToStringImpl(element, false);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+class MyComponent extends React.Component {
+  render() {
+    return &lt;div&gt;Hello World&lt;/div&gt;;
+  }
+}
+
+ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToString</span>(&lt;MyComponent /&gt;);
+```
+
+## API
+
+### `react-dom`
+
+- `findDOMNode`
+...</pre></li>
+    </ul>
 
 
 
