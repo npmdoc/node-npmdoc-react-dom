@@ -1,9 +1,9 @@
-<svg height="2446" width="720" xmlns="http://www.w3.org/2000/svg">
-<rect height="2446" fill="#555" width="720"></rect>
+<svg height="2510" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="2510" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
 <tspan x="10" y="26"></tspan>
 
-<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-10T18:29:10.578Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
+<tspan x="10" y="42">[MODE_BUILD=buildApp] - 2018-06-10T18:32:14.973Z - npm-testing /home/travis/build/npmdoc/node-np\</tspan>
 <tspan x="10" y="58">mdoc-react-dom</tspan>
 
 <tspan x="10" y="74"></tspan>
@@ -13,7 +13,7 @@
 <tspan x="10" y="106">buildApp - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-react-dom/tmp/buil\</tspan>
 <tspan x="10" y="122">d/test-report.json</tspan>
 
-<tspan x="10" y="138">&gt; server listening on http-port 45559</tspan>
+<tspan x="10" y="138">&gt; server listening on http-port 40590</tspan>
 
 <tspan x="10" y="154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-react-dom/node_modules/react-do\</tspan>
 <tspan x="10" y="170">m/package.json</tspan>
@@ -191,12 +191,12 @@
 
 <tspan x="10" y="1898"></tspan>
 
-<tspan x="10" y="1914">(node:8006) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
-<tspan x="10" y="1930">e.</tspan>
+<tspan x="10" y="1914">(node:10191) DeprecationWarning: _linklist module is deprecated. Please use a userland alternati\</tspan>
+<tspan x="10" y="1930">ve.</tspan>
 
-<tspan x="10" y="1946">(node:8006) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+<tspan x="10" y="1946">(node:10191) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
 
-<tspan x="10" y="1962">&gt; server listening on http-port 60612</tspan>
+<tspan x="10" y="1962">&gt; server listening on http-port 53623</tspan>
 
 <tspan x="10" y="1978">[node test-case 1 of 1 passed] - testCase_buildApp_default</tspan>
 
@@ -211,7 +211,7 @@
 
 <tspan x="10" y="2074">| test-report - buildApidoc - node - linux v6.14.2 - 2018-06-10T18:26:42.631Z</tspan>
 
-<tspan x="10" y="2090">|  154762 ms            0 failed        1 passed      |</tspan>
+<tspan x="10" y="2090">|  339223 ms            0 failed        1 passed      |</tspan>
 
 <tspan x="10" y="2106">-------------------------------------------------------</tspan>
 
@@ -235,22 +235,29 @@
 
 <tspan x="10" y="2282">-------------------------------------------------------</tspan>
 
-<tspan x="10" y="2298"></tspan>
+<tspan x="10" y="2298">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="2314">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T18:31:31.809Z</tspan>
 
-<tspan x="10" y="2314">created test-report file /home/travis/build/npmdoc/node-npmdoc-react-dom/tmp/build/test-report.h\</tspan>
-<tspan x="10" y="2330">tml</tspan>
+<tspan x="10" y="2330">|      53 ms            0 failed        8 passed      |</tspan>
 
-<tspan x="10" y="2346"></tspan>
+<tspan x="10" y="2346">-------------------------------------------------------</tspan>
 
 <tspan x="10" y="2362"></tspan>
 
-<tspan x="10" y="2378">buildApp - 0 failed tests</tspan>
-
-<tspan x="10" y="2394"></tspan>
+<tspan x="10" y="2378">created test-report file /home/travis/build/npmdoc/node-npmdoc-react-dom/tmp/build/test-report.h\</tspan>
+<tspan x="10" y="2394">tml</tspan>
 
 <tspan x="10" y="2410"></tspan>
 
-<tspan x="10" y="2426">[MODE_BUILD=buildApp] - 2018-06-10T18:29:18.981Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2426"></tspan>
+
+<tspan x="10" y="2442">buildApp - 0 failed tests</tspan>
+
+<tspan x="10" y="2458"></tspan>
+
+<tspan x="10" y="2474"></tspan>
+
+<tspan x="10" y="2490">[MODE_BUILD=buildApp] - 2018-06-10T18:32:23.413Z - EXIT_CODE - 0</tspan>
 
 </text>
 </svg>
