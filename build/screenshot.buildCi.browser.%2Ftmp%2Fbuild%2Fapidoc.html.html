@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -48,17 +48,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://reactjs.org/"
-
-    >react-dom (16.4.0)</a>
+    <a href="https://reactjs.org/">react-dom (16.4.0)</a>
 </h1>
 <h4>React package for working with the DOM.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-dom">module react-dom</a><ol>
 
@@ -453,7 +446,7 @@
     <li>description and source-code<pre class="apidocCodePre">function createPortal(children, container) {
   var key = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : null;
 
-  !isValidContainer(container) ? invariant(false, &apos;Target container is not a DOM element.&apos;) : void 0;
+  !isValidContainer(container) ? invariant(false, 'Target container is not a DOM element.') : void 0;
   // TODO: pass ReactDOM portal implementation as third argument
   return createPortal$1(children, container, null, key);
 }</pre></li>
@@ -474,9 +467,9 @@
     var owner = ReactCurrentOwner.current;
     if (owner !== null &amp;&amp; owner.stateNode !== null) {
       var warnedAboutRefsInRender = owner.stateNode._warnedAboutRefsInRender;
-      !warnedAboutRefsInRender ? warning(false, &apos;%s is accessing findDOMNode inside its render(). &apos; + &apos;render() should be a pure
- function of props and state. It should &apos; + &apos;never access something that requires stale data from the previous &apos; + &apos;render, such
- as refs. Move this logic to componentDidMount and &apos; + &apos;componentDidUpdate instead.&apos;, getComponentName(owner) || &apos;A component&apos;) :
+      !warnedAboutRefsInRender ? warning(false, '%s is accessing findDOMNode inside its render(). ' + 'render() should be a pure
+ function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such
+ as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', getComponentName(owner) || 'A component') :
 void 0;
       owner.stateNode._warnedAboutRefsInRender = true;
     }
@@ -503,8 +496,8 @@ void 0;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function flushSync(fn, a) {
-  !!isRendering ? invariant(false, &apos;flushSync was called from inside a lifecycle method. It cannot be called when React is already
- rendering.&apos;) : void 0;
+  !!isRendering ? invariant(false, 'flushSync was called from inside a lifecycle method. It cannot be called when React is already
+ rendering.') : void 0;
   var previousIsBatchingUpdates = isBatchingUpdates;
   isBatchingUpdates = true;
   try {
@@ -527,7 +520,7 @@ void 0;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">hydrate = function (element, container, callback) {
-  // TODO: throw or warn if we couldn&apos;t hydrate?
+  // TODO: throw or warn if we couldn't hydrate?
   return legacyRenderSubtreeIntoContainer(null, element, container, true, callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -559,8 +552,8 @@ ReactDOM.<span class="apidocCodeKeywordSpan">render</span>(&lt;MyComponent /&gt;
 ### On the server
 
 ```js
-var React = require(&apos;react&apos;);
-var ReactDOMServer = require(&apos;react-dom/server&apos;);
+var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 ...</pre></li>
     </ul>
 
@@ -574,15 +567,15 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unmountComponentAtNode = function (container) {
-  !isValidContainer(container) ? invariant(false, &apos;unmountComponentAtNode(...): Target container is not a DOM element.&apos;) : void
+  !isValidContainer(container) ? invariant(false, 'unmountComponentAtNode(...): Target container is not a DOM element.') : void
 0;
 
   if (container._reactRootContainer) {
     {
       var rootEl = getReactRootElementInContainer(container);
       var renderedByDifferentReact = rootEl &amp;&amp; !getInstanceFromNode$1(rootEl);
-      !!renderedByDifferentReact ? warning(false, &quot;unmountComponentAtNode(): The node you&apos;re attempting to unmount &quot; + &apos;was rendered
- by another copy of React.&apos;) : void 0;
+      !!renderedByDifferentReact ? warning(false, "unmountComponentAtNode(): The node you're attempting to unmount " + 'was rendered
+ by another copy of React.') : void 0;
     }
 
     // Unmount should not be batched.
@@ -591,8 +584,8 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
         container._reactRootContainer = null;
       });
     });
-    // If you call unmountComponentAtNode twice in quick succession, you&apos;ll
-    // get `true` twice. That&apos;s probably fine?
+    // If you call unmountComponentAtNode twice in quick succession, you'll
+    // get `true` twice. That's probably fine?
     return true;
   } else {
     {
@@ -603,10 +596,10 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
       var isContainerReactRoot = container.nodeType === 1 &amp;&amp; isValidContainer(container.parentNode) &amp;&amp; !!container.parentNode._reactRootContainer
 ;
 
-      !!hasNonRootReactChild ? warning(false, &quot;unmountComponentAtNode(): The node you&apos;re attempting to unmount &quot; + &apos;was rendered
- by React and is not a top-level container. %s&apos;, isContainerReactRoot ? &apos;You may have accidentally passed in a React root node instead
- &apos; + &apos;of its container.&apos; : &apos;Instead, have the parent component update its state and &apos; + &apos;rerender in order to remove this component
-.&apos;) : void 0;
+      !!hasNonRootReactChild ? warning(false, "unmountComponentAtNode(): The node you're attempting to unmount " + 'was rendered
+ by React and is not a top-level container. %s', isContainerReactRoot ? 'You may have accidentally passed in a React root node instead
+ ' + 'of its container.' : 'Instead, have the parent component update its state and ' + 'rerender in order to remove this component
+.') : void 0;
     }
 
     return false;
@@ -645,8 +638,8 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
   }
 
   ReactDOM.<span class="apidocCodeKeywordSpan">unstable_batchedUpdates</span>(function () {
-    // Normally extractEvent enqueues a state restore, but we&apos;ll just always
-    // do that since we we&apos;re by-passing it here.
+    // Normally extractEvent enqueues a state restore, but we'll just always
+    // do that since we we're by-passing it here.
     ReactControlledComponent.enqueueStateRestore(domNode);
     EventPluginHub.runEventsInBatch(event, true);
   });
@@ -667,9 +660,9 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
     <li>description and source-code<pre class="apidocCodePre">unstable_createPortal = function () {
   if (!didWarnAboutUnstableCreatePortal) {
     didWarnAboutUnstableCreatePortal = true;
-    lowPriorityWarning$1(false, &apos;The ReactDOM.unstable_createPortal() alias has been deprecated, &apos; + &apos;and will be removed in React
- 17+. Update your code to use &apos; + &apos;ReactDOM.createPortal() instead. It has the exact same API, &apos; + &apos;but without the &quot;unstable_&quot;
-prefix.&apos;);
+    lowPriorityWarning$1(false, 'The ReactDOM.unstable_createPortal() alias has been deprecated, ' + 'and will be removed in React
+ 17+. Update your code to use ' + 'ReactDOM.createPortal() instead. It has the exact same API, ' + 'but without the "unstable_"
+prefix.');
   }
   return createPortal.apply(undefined, arguments);
 }</pre></li>
@@ -748,7 +741,7 @@ prefix.&apos;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unstable_renderSubtreeIntoContainer = function (parentComponent, element, containerNode, callback) {
-  !(parentComponent != null &amp;&amp; has(parentComponent)) ? invariant(false, &apos;parentComponent must be a valid React Component&apos;) : void
+  !(parentComponent != null &amp;&amp; has(parentComponent)) ? invariant(false, 'parentComponent must be a valid React Component') : void
  0;
   return legacyRenderSubtreeIntoContainer(parentComponent, element, containerNode, false, callback);
 }</pre></li>
@@ -782,7 +775,7 @@ prefix.&apos;);
     <li>description and source-code<pre class="apidocCodePre">function createPortal(children, container) {
   var key = arguments.length &gt; 2 &amp;&amp; arguments[2] !== undefined ? arguments[2] : null;
 
-  !isValidContainer(container) ? invariant_1(false, &apos;Target container is not a DOM element.&apos;) : void 0;
+  !isValidContainer(container) ? invariant_1(false, 'Target container is not a DOM element.') : void 0;
   // TODO: pass ReactDOM portal implementation as third argument
   return createPortal$1(children, container, null, key);
 }</pre></li>
@@ -803,9 +796,9 @@ prefix.&apos;);
     var owner = ReactCurrentOwner.current;
     if (owner !== null &amp;&amp; owner.stateNode !== null) {
       var warnedAboutRefsInRender = owner.stateNode._warnedAboutRefsInRender;
-      !warnedAboutRefsInRender ? warning_1(false, &apos;%s is accessing findDOMNode inside its render(). &apos; + &apos;render() should be a pure
- function of props and state. It should &apos; + &apos;never access something that requires stale data from the previous &apos; + &apos;render, such
- as refs. Move this logic to componentDidMount and &apos; + &apos;componentDidUpdate instead.&apos;, getComponentName(owner) || &apos;A component&apos;) :
+      !warnedAboutRefsInRender ? warning_1(false, '%s is accessing findDOMNode inside its render(). ' + 'render() should be a pure
+ function of props and state. It should ' + 'never access something that requires stale data from the previous ' + 'render, such
+ as refs. Move this logic to componentDidMount and ' + 'componentDidUpdate instead.', getComponentName(owner) || 'A component') :
 void 0;
       owner.stateNode._warnedAboutRefsInRender = true;
     }
@@ -832,8 +825,8 @@ void 0;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function flushSync(fn, a) {
-  !!isRendering ? invariant_1(false, &apos;flushSync was called from inside a lifecycle method. It cannot be called when React is already
- rendering.&apos;) : void 0;
+  !!isRendering ? invariant_1(false, 'flushSync was called from inside a lifecycle method. It cannot be called when React is already
+ rendering.') : void 0;
   var previousIsBatchingUpdates = isBatchingUpdates;
   isBatchingUpdates = true;
   try {
@@ -856,7 +849,7 @@ void 0;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">hydrate = function (element, container, callback) {
-  // TODO: throw or warn if we couldn&apos;t hydrate?
+  // TODO: throw or warn if we couldn't hydrate?
   return legacyRenderSubtreeIntoContainer(null, element, container, true, callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -888,8 +881,8 @@ ReactDOM.<span class="apidocCodeKeywordSpan">render</span>(&lt;MyComponent /&gt;
 ### On the server
 
 ```js
-var React = require(&apos;react&apos;);
-var ReactDOMServer = require(&apos;react-dom/server&apos;);
+var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 ...</pre></li>
     </ul>
 
@@ -903,15 +896,15 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unmountComponentAtNode = function (container) {
-  !isValidContainer(container) ? invariant_1(false, &apos;unmountComponentAtNode(...): Target container is not a DOM element.&apos;) : void
+  !isValidContainer(container) ? invariant_1(false, 'unmountComponentAtNode(...): Target container is not a DOM element.') : void
  0;
 
   if (container._reactRootContainer) {
     {
       var rootEl = getReactRootElementInContainer(container);
       var renderedByDifferentReact = rootEl &amp;&amp; !getInstanceFromNode$1(rootEl);
-      !!renderedByDifferentReact ? warning_1(false, &quot;unmountComponentAtNode(): The node you&apos;re attempting to unmount &quot; + &apos;was rendered
- by another copy of React.&apos;) : void 0;
+      !!renderedByDifferentReact ? warning_1(false, "unmountComponentAtNode(): The node you're attempting to unmount " + 'was rendered
+ by another copy of React.') : void 0;
     }
 
     // Unmount should not be batched.
@@ -920,8 +913,8 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
         container._reactRootContainer = null;
       });
     });
-    // If you call unmountComponentAtNode twice in quick succession, you&apos;ll
-    // get `true` twice. That&apos;s probably fine?
+    // If you call unmountComponentAtNode twice in quick succession, you'll
+    // get `true` twice. That's probably fine?
     return true;
   } else {
     {
@@ -932,10 +925,10 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
       var isContainerReactRoot = container.nodeType === 1 &amp;&amp; isValidContainer(container.parentNode) &amp;&amp; !!container.parentNode._reactRootContainer
 ;
 
-      !!hasNonRootReactChild ? warning_1(false, &quot;unmountComponentAtNode(): The node you&apos;re attempting to unmount &quot; + &apos;was rendered
- by React and is not a top-level container. %s&apos;, isContainerReactRoot ? &apos;You may have accidentally passed in a React root node instead
- &apos; + &apos;of its container.&apos; : &apos;Instead, have the parent component update its state and &apos; + &apos;rerender in order to remove this component
-.&apos;) : void 0;
+      !!hasNonRootReactChild ? warning_1(false, "unmountComponentAtNode(): The node you're attempting to unmount " + 'was rendered
+ by React and is not a top-level container. %s', isContainerReactRoot ? 'You may have accidentally passed in a React root node instead
+ ' + 'of its container.' : 'Instead, have the parent component update its state and ' + 'rerender in order to remove this component
+.') : void 0;
     }
 
     return false;
@@ -974,8 +967,8 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
   }
 
   ReactDOM.<span class="apidocCodeKeywordSpan">unstable_batchedUpdates</span>(function () {
-    // Normally extractEvent enqueues a state restore, but we&apos;ll just always
-    // do that since we we&apos;re by-passing it here.
+    // Normally extractEvent enqueues a state restore, but we'll just always
+    // do that since we we're by-passing it here.
     ReactControlledComponent.enqueueStateRestore(domNode);
     EventPluginHub.runEventsInBatch(event, true);
   });
@@ -996,9 +989,9 @@ var ReactDOMServer = require(&apos;react-dom/server&apos;);
     <li>description and source-code<pre class="apidocCodePre">unstable_createPortal = function () {
   if (!didWarnAboutUnstableCreatePortal) {
     didWarnAboutUnstableCreatePortal = true;
-    lowPriorityWarning$1(false, &apos;The ReactDOM.unstable_createPortal() alias has been deprecated, &apos; + &apos;and will be removed in React
- 17+. Update your code to use &apos; + &apos;ReactDOM.createPortal() instead. It has the exact same API, &apos; + &apos;but without the &quot;unstable_&quot;
-prefix.&apos;);
+    lowPriorityWarning$1(false, 'The ReactDOM.unstable_createPortal() alias has been deprecated, ' + 'and will be removed in React
+ 17+. Update your code to use ' + 'ReactDOM.createPortal() instead. It has the exact same API, ' + 'but without the "unstable_"
+prefix.');
   }
   return createPortal.apply(undefined, arguments);
 }</pre></li>
@@ -1077,7 +1070,7 @@ prefix.&apos;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">unstable_renderSubtreeIntoContainer = function (parentComponent, element, containerNode, callback) {
-  !(parentComponent != null &amp;&amp; has(parentComponent)) ? invariant_1(false, &apos;parentComponent must be a valid React Component&apos;) : void
+  !(parentComponent != null &amp;&amp; has(parentComponent)) ? invariant_1(false, 'parentComponent must be a valid React Component') : void
  0;
   return legacyRenderSubtreeIntoContainer(parentComponent, element, containerNode, false, callback);
 }</pre></li>
@@ -1101,8 +1094,8 @@ prefix.&apos;);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function renderToNodeStream() {
-  invariant(false, &apos;ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer.renderToString
-() instead.&apos;);
+  invariant(false, 'ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer.renderToString
+() instead.');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 function renderToStaticMarkup(element) {
@@ -1112,13 +1105,13 @@ function renderToStaticMarkup(element) {
 }
 
 function renderToNodeStream() {
-  invariant(false, &apos;ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToNodeStream</span>(): The streaming API is not
- available in the browser. Use ReactDOMServer.renderToString() instead.&apos;);
+  invariant(false, 'ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToNodeStream</span>(): The streaming API is not
+ available in the browser. Use ReactDOMServer.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-  invariant(false, &apos;ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToStaticMarkup() instead.&apos;);
+  invariant(false, 'ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToStaticMarkup() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1143,13 +1136,13 @@ function renderToStaticNodeStream() {
 }
 
 function renderToNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToString() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.<span class="apidocCodeKeywordSpan">renderToStaticMarkup</span>() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.<span class="apidocCodeKeywordSpan">renderToStaticMarkup</span>() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1170,20 +1163,20 @@ renderToNodeStream: renderToNodeStream,
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function renderToStaticNodeStream() {
-  invariant(false, &apos;ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToStaticMarkup() instead.&apos;);
+  invariant(false, 'ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToStaticMarkup() instead.');
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 }
 
 function renderToNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToString() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-invariant(false, &apos;ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToStaticNodeStream</span>(): The streaming API is
- not available in the browser. Use ReactDOMServer.renderToStaticMarkup() instead.&apos;);
+invariant(false, 'ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToStaticNodeStream</span>(): The streaming API is
+ not available in the browser. Use ReactDOMServer.renderToStaticMarkup() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1254,13 +1247,13 @@ function renderToStaticMarkup(element) {
 }
 
 function renderToNodeStream() {
-  invariant(false, &apos;ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToNodeStream</span>(): The streaming API is not
- available in the browser. Use ReactDOMServer.renderToString() instead.&apos;);
+  invariant(false, 'ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToNodeStream</span>(): The streaming API is not
+ available in the browser. Use ReactDOMServer.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-  invariant(false, &apos;ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToStaticMarkup() instead.&apos;);
+  invariant(false, 'ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToStaticMarkup() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1285,13 +1278,13 @@ function renderToStaticNodeStream() {
 }
 
 function renderToNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToString() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.<span class="apidocCodeKeywordSpan">renderToStaticMarkup</span>() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToStaticNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.<span class="apidocCodeKeywordSpan">renderToStaticMarkup</span>() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1318,13 +1311,13 @@ renderToNodeStream: renderToNodeStream,
 }
 
 function renderToNodeStream() {
-invariant(false, &apos;ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
-.renderToString() instead.&apos;);
+invariant(false, 'ReactDOMServer.renderToNodeStream(): The streaming API is not available in the browser. Use ReactDOMServer
+.renderToString() instead.');
 }
 
 function renderToStaticNodeStream() {
-invariant(false, &apos;ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToStaticNodeStream</span>(): The streaming API is
- not available in the browser. Use ReactDOMServer.renderToStaticMarkup() instead.&apos;);
+invariant(false, 'ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToStaticNodeStream</span>(): The streaming API is
+ not available in the browser. Use ReactDOMServer.renderToStaticMarkup() instead.');
 }
 
 // Note: when changing this, also consider https://github.com/facebook/react/issues/11526
@@ -1390,8 +1383,8 @@ ReactDOMServer.<span class="apidocCodeKeywordSpan">renderToString</span>(&lt;MyC
   getNodeFromInstance = Injected.getNodeFromInstance;
 
   {
-    !(getNodeFromInstance &amp;&amp; getInstanceFromNode) ? warning(false, &apos;EventPluginUtils.injection.injectComponentTree(...): Injected
- &apos; + &apos;module is missing getNodeFromInstance or getInstanceFromNode.&apos;) : void 0;
+    !(getNodeFromInstance &amp;&amp; getInstanceFromNode) ? warning(false, 'EventPluginUtils.injection.injectComponentTree(...): Injected
+ ' + 'module is missing getNodeFromInstance or getInstanceFromNode.') : void 0;
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -1402,8 +1395,8 @@ injectComponentTree: function (Injected) {
   getNodeFromInstance = Injected.getNodeFromInstance;
 
   {
-    !(getNodeFromInstance &amp;&amp; getInstanceFromNode) ? warning(false, &apos;EventPluginUtils.injection.<span class="apidocCodeKeywordSpan
-">injectComponentTree</span>(...): Injected &apos; + &apos;module is missing getNodeFromInstance or getInstanceFromNode.&apos;) :
+    !(getNodeFromInstance &amp;&amp; getInstanceFromNode) ? warning(false, 'EventPluginUtils.injection.<span class="apidocCodeKeywordSpan
+">injectComponentTree</span>(...): Injected ' + 'module is missing getNodeFromInstance or getInstanceFromNode.') :
 void 0;
   }
 }
@@ -1428,3 +1421,4 @@ validateEventDispatches = function (event) {
     ]
 </div>
 </div>
+</body></html>
