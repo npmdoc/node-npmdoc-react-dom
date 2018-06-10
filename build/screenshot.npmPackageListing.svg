@@ -1,0 +1,69 @@
+<svg height="574" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="574" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">package files</tspan>
+
+<tspan x="10" y="42"></tspan>
+
+<tspan x="10" y="58">0.   2018-06-10 18:26:44 +0000  2045681 bytes  .</tspan>
+
+<tspan x="10" y="74">1.   2018-06-10 18:26:44 +0000     1080 bytes  LICENSE</tspan>
+
+<tspan x="10" y="90">2.   2018-06-10 18:26:44 +0000      897 bytes  README.md</tspan>
+
+<tspan x="10" y="106">3.   2018-06-10 18:26:44 +0000    93024 bytes  cjs/react-dom-server.browser.development.js</tspan>
+
+<tspan x="10" y="122">4.   2018-06-10 18:26:44 +0000    14768 bytes  cjs/react-dom-server.browser.production.min.js</tspan>
+
+<tspan x="10" y="138">5.   2018-06-10 18:26:44 +0000    94992 bytes  cjs/react-dom-server.node.development.js</tspan>
+
+<tspan x="10" y="154">6.   2018-06-10 18:26:44 +0000    15592 bytes  cjs/react-dom-server.node.production.min.js</tspan>
+
+<tspan x="10" y="170">7.   2018-06-10 18:26:44 +0000    41092 bytes  cjs/react-dom-test-utils.development.js</tspan>
+
+<tspan x="10" y="186">8.   2018-06-10 18:26:44 +0000     9913 bytes  cjs/react-dom-test-utils.production.min.js</tspan>
+
+<tspan x="10" y="202">9.   2018-06-10 18:26:44 +0000    58483 bytes  cjs/react-dom-unstable-native-dependencies.develo\</tspan>
+<tspan x="10" y="218">pment.js</tspan>
+
+<tspan x="10" y="234">10.  2018-06-10 18:26:44 +0000    10939 bytes  cjs/react-dom-unstable-native-dependencies.produc\</tspan>
+<tspan x="10" y="250">tion.min.js</tspan>
+
+<tspan x="10" y="266">11.  2018-06-10 18:26:44 +0000   620506 bytes  cjs/react-dom.development.js</tspan>
+
+<tspan x="10" y="282">12.  2018-06-10 18:26:44 +0000    94422 bytes  cjs/react-dom.production.min.js</tspan>
+
+<tspan x="10" y="298">13.  2018-06-10 18:26:44 +0000     1363 bytes  index.js</tspan>
+
+<tspan x="10" y="314">14.  2018-06-10 18:26:44 +0000     4202 bytes  package.json</tspan>
+
+<tspan x="10" y="330">15.  2018-06-10 18:26:44 +0000      228 bytes  server.browser.js</tspan>
+
+<tspan x="10" y="346">16.  2018-06-10 18:26:44 +0000       58 bytes  server.js</tspan>
+
+<tspan x="10" y="362">17.  2018-06-10 18:26:44 +0000      222 bytes  server.node.js</tspan>
+
+<tspan x="10" y="378">18.  2018-06-10 18:26:44 +0000      220 bytes  test-utils.js</tspan>
+
+<tspan x="10" y="394">19.  2018-06-10 18:26:44 +0000   103978 bytes  umd/react-dom-server.browser.development.js</tspan>
+
+<tspan x="10" y="410">20.  2018-06-10 18:26:44 +0000    15420 bytes  umd/react-dom-server.browser.production.min.js</tspan>
+
+<tspan x="10" y="426">21.  2018-06-10 18:26:44 +0000    46355 bytes  umd/react-dom-test-utils.development.js</tspan>
+
+<tspan x="10" y="442">22.  2018-06-10 18:26:44 +0000    10653 bytes  umd/react-dom-test-utils.production.min.js</tspan>
+
+<tspan x="10" y="458">23.  2018-06-10 18:26:44 +0000    62921 bytes  umd/react-dom-unstable-native-dependencies.develo\</tspan>
+<tspan x="10" y="474">pment.js</tspan>
+
+<tspan x="10" y="490">24.  2018-06-10 18:26:44 +0000    11622 bytes  umd/react-dom-unstable-native-dependencies.produc\</tspan>
+<tspan x="10" y="506">tion.min.js</tspan>
+
+<tspan x="10" y="522">25.  2018-06-10 18:26:44 +0000   636515 bytes  umd/react-dom.development.js</tspan>
+
+<tspan x="10" y="538">26.  2018-06-10 18:26:44 +0000    95960 bytes  umd/react-dom.production.min.js</tspan>
+
+<tspan x="10" y="554">27.  2018-06-10 18:26:44 +0000      256 bytes  unstable-native-dependencies.js</tspan>
+
+</text>
+</svg>
